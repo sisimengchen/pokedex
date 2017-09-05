@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/sprite/index",
+    "pages/about/index",
+    "pages/filter/index",
+    "pages/filterout/index",
+    "pages/resist/index",
+    "pages/abilitydetail/index",
+    "pages/logs/logs",
+    "pages/info/index",
+    "pages/advertisement/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DC4343",
+    "navigationBarTitleText": "POKEMON",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EFEFF4"
+  },
+  "tabBar": {
+    "color": "#B2B2B2",
+    "selectedColor": "#353535",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "宝可梦",
+        "iconPath": "/img/icon_tabbar_pokemon_normal.png",
+        "selectedIconPath": "/img/icon_tabbar_pokemon_selected.png"
+      },
+      {
+        "pagePath": "pages/info/index",
+        "text": "信息",
+        "iconPath": "/img/icon_tabbar_info_normal.png",
+        "selectedIconPath": "/img/icon_tabbar_info_selected.png"
+      }
+    ]
+  }
+}

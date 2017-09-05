@@ -1,0 +1,39 @@
+page {
+  background-color: #fff;
+}
+
+.m-info {
+  box-sizing: border-box;
+  height: 210rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: #000;
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.m-info .title {
+  display: block;
+  font-size: 34rpx;
+  color: #353535;
+  line-height: 48rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.m-info .desc {
+  display: block;
+  font-size: 26rpx;
+  color: #888;
+  line-height: 37rpx;
+  margin-top: 10rpx;
+  text-align: center;
+}
+
+.m-info image {
+  display: block;
+  width: 258rpx;
+  height: 258rpx;
+  margin: 0 auto;
+  margin-top: 240rpx;
+}

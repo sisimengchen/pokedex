@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view>
+  <view wx:for="{{updateList}}" class="updateList" wx:for-item="update" wx:key="unique">
+    <view class="version">Ver {{ update.version }}</view>
+    <view class="date">{{ update.date }}</view>
+    <view class="itemList" wx:for="{{update.updateItems}}"  wx:for-item="item" wx:key="unique">{{ item }}</view>
+  </view>
+  <view class="author">
+    <image src="/img/icon_minilogo.png"></image>
+    <text>made by mengchen & pangboran</text>
+    <text>dedicated to all Pokémon trainers</text>
+  </view>
+</view>

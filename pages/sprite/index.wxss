@@ -1,0 +1,267 @@
+/**index.wxss**/
+
+.container {
+  padding-bottom: 40rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.m-sprite {
+  margin-top: 40rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.m-sprite .m-avatar {
+  margin-top: 15rpx;
+  vertical-align: baseline;
+}
+
+.m-sprite .m-info {
+  display: inline-block;
+  margin-left: 20rpx;
+}
+
+.m-sprite .m-info .name {
+  color: #353535;
+  line-height: 50rpx;
+}
+
+.m-sprite .m-info .species {
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+
+.spriteList {
+  width: 100%;
+}
+
+.ctntitle {
+  display: block;
+  width: 100%;
+  font-size: 28rpx;
+  text-align: left;
+  padding: 30rpx 30rpx 16rpx 30rpx;
+  box-sizing: border-box;
+  color: #888;
+}
+
+.ctn {
+  background-color: #fff;
+  width: 100%;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size: 34rpx;
+  color: #353535;
+}
+
+.ctn .item {
+  display: flex;
+  margin-left: 30rpx;
+  /*padding: 20rpx 0;*/
+  line-height: 88rpx;
+  /* height: 88rpx; */
+  box-sizing: border-box;
+  color: #888;
+  border-bottom: 1rpx solid #e5e5e5;
+  position: relative;
+}
+
+.ctn .item:last-child {
+  border-bottom: 0;
+}
+
+.ctn .bitem {
+  line-height: 120rpx;
+  /* height: 120rpx; */
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.ctn .item .title {
+  display: flex;
+  width: 136rpx;
+  color: #353535;
+}
+
+.ctn .item .content {
+  display: flex;
+  flex: 1;
+  padding-left: 44rpx;
+  padding-right: 60rpx;
+}
+
+.baseInfo .item .content text {
+  margin-right: 10rpx;
+}
+
+.baseInfo .item .content .female {
+  color: #dc4343;
+}
+
+.ctn .item .content .pTitle {
+  margin-right: 25rpx;
+  width: 80rpx;
+  text-align: right;
+}
+
+.ctn .item .content progress {
+  width: 100%;
+}
+
+.features .item {
+  display: block;
+  box-sizing: border-box;
+}
+
+.features .item .title {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 48rpx;
+}
+
+.features .item .content {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0;
+  font-size: 26rpx;
+  line-height: 37rpx;
+}
+
+.features .item .chevron {
+  width: 16rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  margin-top: -13rpx;
+}
+
+.evolutions {
+  box-sizing: border-box;
+  padding: 32rpx 28rpx;
+  border: 0px;
+}
+
+.evolutions .evoItem {
+  width: 160rpx;
+  float: left;
+  border-radius:8rpx;
+}
+
+.evolutions .join {
+  width: 106rpx;
+  float: left;
+  text-align: center;
+  font-size: 22rpx;
+  margin-top: 83rpx;
+}
+
+.evolutions .join text {
+  display: block;
+  text-align: center;
+  line-height: 10rpx;
+  margin-top: 10rpx;
+}
+
+.evolutions .join image {
+  width: 60rpx;
+  height: 8rpx;
+  margin: 0 auto;
+}
+
+.evolutions  .joinlevel {
+  color: #dc4343;
+}
+
+.evolutions  .joinstone {
+  color: #ada274;
+}
+
+.evolutions  .joinexchange {
+  color: #2c88d1;
+}
+
+.evolutions .evoItem .evoIteminner {
+  width: 100%;
+  border-radius: 8rpx;
+  border: 1rpx solid #e5e5e5;
+}
+
+.evolutions .evoItem .level {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 10rpx;
+  font-size: 24rpx;
+}
+
+.evolutions .evoItem .nolevel {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.evolutions .evoItem .avatarctn {
+  width: 100%;
+  height: 80rpx;
+}
+
+.evolutions .evoItem .avatarctn .m-avatar {
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.evolutions .evoItem .name {
+  width: 100%;
+  display: block;
+  background-color: #e5e5e5;
+  color: #353535;
+  padding-top: 6rpx;
+  padding-bottom: 6rpx;
+  text-align: center;
+  font-size: 22rpx;
+}
+
+.evolutions .current .level {
+  /*color: #fff;*/
+}
+
+.evolutions .current .evoIteminner {
+  border: 1rpx solid #dc4343;
+}
+
+.evolutions .current .name {
+  background-color: #dc4343;
+  color: #fff;
+}
+
+.evolutions .empty {
+  visibility: hidden;
+  opacity: 0;
+}

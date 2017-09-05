@@ -1,0 +1,36 @@
+/* index.wxss */
+
+.m-contents .m-content .item {
+  display: flex;
+  margin: 0 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: #353535;
+  border-bottom: 1rpx solid #e5e5e5;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  text-align: justify;
+}
+
+.m-contents .m-content .item:last-child {
+  border-bottom: 0;
+}
+
+.m-contents .m-content .item view {
+  flex: 1;
+}
+
+.m-contents .m-content .item .left {
+  text-align: left;
+}
+
+.m-contents .m-content .item .right {
+  text-align: right;
+}
+
+.m-sprite {
+  position: fixed;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+}

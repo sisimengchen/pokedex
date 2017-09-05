@@ -1,0 +1,190 @@
+/**app.wxss**/
+
+page {
+  background-color: #efeff4;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 200rpx 0;*/
+  box-sizing: border-box;
+}
+
+/* 自定义tab */
+
+.m-tabs {
+  width: 100%;
+  display: flex;
+  color: #353535;
+  font-size: 28rpx;
+  background-color: #fafafa;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.m-tabs .m-tab {
+  flex: 1;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 27rpx 0;
+  margin: 0 40rpx;
+}
+
+.m-tabs .active {
+  color: #dc4343;
+  border-bottom: 6rpx solid #dc4343;
+}
+
+.m-contents {
+  width: 100%;
+  color: #353535;
+  font-size: 34rpx;
+  margin-bottom: 128rpx;
+}
+
+.m-contents .m-content {
+  box-sizing: border-box;
+  /*padding: 8px 0;*/
+  width: 100%;
+  display: none;
+  background-color: #fff;
+}
+
+.m-contents .m-content:last-child {
+  border-bottom: 0;
+}
+.m-contents .active {
+  display: block;
+}
+
+/* 精灵公共导航区域 */
+
+.m-sprite {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 34rpx;
+  color: #888;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+
+.m-sprite .types {
+  float: right;
+}
+
+.m-sprite .types .m-type {
+  margin-left: 20rpx;
+}
+
+.m-chevron {
+  float: right;
+  margin-left: 30rpx;
+}
+
+.m-chevron .chevron {
+  width: 16rpx;
+  height: 26rpx;
+  vertical-align: middle;
+}
+
+/* 精灵头像 */
+
+.m-avatar {
+   display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+}
+
+/* 精灵类型标签 */
+
+.m-type {
+  box-sizing: border-box;
+  display: inline-block;
+  color: #fff;
+  font-size: 26rpx;
+  font-weight: bold;
+  width: 100rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 40rpx;
+}
+
+.normal {
+  background-color: #bbbba9;
+}
+
+.fighting {
+  background-color: #be5440;
+}
+
+.flying {
+  background-color: #6595ff;
+}
+
+.poison {
+  background-color: #ad519a;
+}
+
+.ground {
+  background-color: #debd4b;
+}
+
+.rock {
+  background-color: #bbab61;
+}
+
+.bug {
+  background-color: #a8bd00;
+}
+
+.ghost {
+  background-color: #6762be;
+}
+
+.steel {
+  background-color: #aaaabc;
+}
+
+.fire {
+  background-color: #ff400b;
+}
+
+.water {
+  background-color: #2d95ff;
+}
+
+.grass {
+  background-color: #6fcf4d;
+}
+
+.electric {
+  background-color: #ffce0f;
+}
+
+.psychic {
+  background-color: #ff5099;
+}
+
+.ice {
+  background-color: #70ddff;
+}
+
+.dragon {
+  background-color: #7a5ef2;
+}
+
+.dark {
+  background-color: #785543;
+}
+
+.fairy {
+  background-color: #ffa6ff;
+}

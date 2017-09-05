@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <form class="top" bindreset="clearSearch">
+    <view class="searchctn">
+      <image src="/img/icon_search.png"></image>
+      <input class="search" placeholder-style="color: #b2b2b2;" type="text" placeholder="请输入宝可梦中文名或编号" confirm-type="search" bindinput="onInput" focus/>
+    </view>
+    <view class="contorl">
+      <button bindtap="back">取消</button>
+    </view> 
+  </form>
+  <scroll-view scroll-y="true" scroll-top="0" bindscroll="onScroll" wx:if="spriteList" class="spriteList">
+    <view class="stand"></view>
+    <view wx:for="{{spriteList}}" class="sprite" wx:for-item="sprite" wx:key="unique" data-id="{{sprite.id}}" data-index="{{sprite.index}}" bindtap="tapSprite">
+      <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
+      <text class="name">{{sprite.cname + (sprite.form || '')}}</text>
+      <view class="types">
+        <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
