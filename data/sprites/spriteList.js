@@ -17915,7 +17915,7 @@ module.exports = [
     ],
     "ability": [
       "keeneye",
-      "hydration",
+      "drizzle",
       "raindish"
     ],
     "eggGroup": [
@@ -32645,7 +32645,7 @@ module.exports = [
     "id": "521",
     "name": "Unfezant",
     "cname": "高傲雉鸡",
-    "generation": 7,
+    "generation": 5,
     "gendercode": 127,
     "captureRate": 45,
     "baseStats": {
@@ -39378,7 +39378,7 @@ module.exports = [
     "name": "Reshiram",
     "cname": "莱希拉姆",
     "species": "白阳",
-    "generation": 7,
+    "generation": 5,
     "gendercode": 255,
     "captureRate": 3,
     "baseStats": {
@@ -39422,7 +39422,7 @@ module.exports = [
     "name": "Zekrom",
     "cname": "捷克罗姆",
     "species": "黑阴",
-    "generation": 7,
+    "generation": 5,
     "gendercode": 255,
     "captureRate": 3,
     "baseStats": {
@@ -39556,7 +39556,7 @@ module.exports = [
     "name": "Kyurem",
     "cname": "酋雷姆",
     "species": "境界",
-    "generation": 7,
+    "generation": 5,
     "gendercode": 255,
     "captureRate": 3,
     "baseStats": {
@@ -40588,7 +40588,7 @@ module.exports = [
     "name": "Talonflame",
     "cname": "烈箭鹰",
     "species": "烈火",
-    "generation": 7,
+    "generation": 6,
     "gendercode": 127,
     "captureRate": 45,
     "baseStats": {
@@ -42722,7 +42722,7 @@ module.exports = [
     "name": "Sylveon",
     "cname": "仙子伊布",
     "species": "连结",
-    "generation": 7,
+    "generation": 6,
     "gendercode": 31,
     "captureRate": 45,
     "baseStats": {
