@@ -42280,11 +42280,11 @@ module.exports = [
     },
     "type": [
       "poison",
-      "water"
+      "dragon"
     ],
     "ctype": [
       "毒",
-      "水"
+      "龙"
     ],
     "ability": [
       "poisonpoint",
