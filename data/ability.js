@@ -927,9 +927,13 @@ var ability = {
     "prismarmor": {
       "cname": "棱镜装甲",
       "introduce": " 受到效果绝佳的攻击时，可以减弱其威力。"
+    },
+    "neuroforce": {
+      "cname": "脑核之力",
+      "introduce": " 效果绝佳的攻击，威力会变得更强。"
     }
   },
-  getAbility: function (key) {
+  getAbility: function(key) {
     return this.table[key];
   }
 };

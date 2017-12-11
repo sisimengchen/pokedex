@@ -366,15 +366,15 @@ var type = {
             case 'normal':
                 return '一般';
             case 'fighting':
-                return '斗';
+                return '格斗';
             case 'flying':
-                return '飞';
+                return '飞行';
             case 'poison':
                 return '毒';
             case 'ground':
-                return '地';
+                return '地面';
             case 'rock':
-                return '岩';
+                return '岩石';
             case 'bug':
                 return '虫';
             case 'ghost':
@@ -390,7 +390,7 @@ var type = {
             case 'electric':
                 return '电';
             case 'psychic':
-                return '超';
+                return '超能力';
             case 'ice':
                 return '冰';
             case 'dragon':
@@ -526,11 +526,11 @@ var type = {
             name: '属性',
             items: [
                 { id: 'normal', value: '一般' },
-                { id: 'fighting', value: '斗' },
-                { id: 'flying', value: '飞' },
+                { id: 'fighting', value: '格斗' },
+                { id: 'flying', value: '飞行' },
                 { id: 'poison', value: '毒' },
-                { id: 'ground', value: '地' },
-                { id: 'rock', value: '岩' },
+                { id: 'ground', value: '地面' },
+                { id: 'rock', value: '岩石' },
                 { id: 'bug', value: '虫' },
                 { id: 'ghost', value: '幽灵' },
                 { id: 'steel', value: '钢' },
@@ -538,7 +538,7 @@ var type = {
                 { id: 'water', value: '水' },
                 { id: 'grass', value: '草' },
                 { id: 'electric', value: '电' },
-                { id: 'psychic', value: '超' },
+                { id: 'psychic', value: '超能力' },
                 { id: 'ice', value: '冰' },
                 { id: 'dragon', value: '龙' },
                 { id: 'dark', value: '恶' },
