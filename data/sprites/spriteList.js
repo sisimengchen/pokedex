@@ -8036,7 +8036,7 @@ module.exports = [{
     "dryskin"
   ],
   "eggGroup": [
-    "undiscovered"
+    "human-like"
   ],
   "area": [
     "gd",
@@ -14241,7 +14241,7 @@ module.exports = [{
     "vitalspirit"
   ],
   "eggGroup": [
-    "human-like"
+    "undiscovered"
   ],
   "area": [
     "cd"

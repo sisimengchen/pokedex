@@ -11,6 +11,7 @@ var globalObject = {
       }
     }
   },
+  // 通过精灵特征查询精灵列表
   getItemsByAbility: function (ability) {
     if (!ability) return null;
     var results = [];
@@ -21,6 +22,107 @@ var globalObject = {
       }
     }
     return results;
+  },
+  // 获取精灵的进化信息
+  getEvolutions: function (sprite) {
+    var evolutions = sprite.evolutions,
+      step1 = evolutions[0],
+      step2 = evolutions[1],
+      step3 = evolutions[2],
+      step1List = [],
+      step2List = [],
+      step3List = [];
+    if (step3) {
+      for (var i = 0; i <= 7; i++) {
+        var idkey = 'id' + (i ? i : '');
+        var idvalue = step3[idkey];
+        var levelkey = 'level' + (i ? i : '');
+        var stonekey = 'stone' + (i ? i : '');
+        var happinesskey = 'happiness' + (i ? i : '');
+        var exchangekey = 'exchange' + (i ? i : '');
+        var otherkey = 'other' + (i ? i : '');
+        var sprite = idvalue ? this.getItemById(idvalue) : {};
+        var e = {
+          id: step3[idkey],
+          level: step3[levelkey],
+          stone: step3[stonekey],
+          happiness: step3[happinesskey],
+          exchange: step3[exchangekey],
+          other: step3[otherkey],
+          index: sprite.index,
+          name: sprite.name,
+          cname: sprite.cname,
+          className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty',
+          stand: idvalue ? '' : 'stand'
+        }
+        step3List.push(e);
+      }
+    }
+    if (step2) {
+      for (var i = 0; i <= 7; i++) {
+        var idkey = 'id' + (i ? i : '');
+        var idvalue = step2[idkey]
+        var levelkey = 'level' + (i ? i : '');
+        var stonekey = 'stone' + (i ? i : '');
+        var happinesskey = 'happiness' + (i ? i : '');
+        var exchangekey = 'exchange' + (i ? i : '');
+        var otherkey = 'other' + (i ? i : '');
+        var sprite = idvalue ? this.getItemById(idvalue) : {};
+        var e = {
+          id: step2[idkey],
+          level: step2[levelkey],
+          stone: step2[stonekey],
+          happiness: step2[happinesskey],
+          exchange: step2[exchangekey],
+          other: step2[otherkey],
+          index: sprite.index,
+          name: sprite.name,
+          cname: sprite.cname,
+          className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty',
+          stand: idvalue ? '' : 'stand'
+        }
+        step2List.push(e);
+      }
+    }
+    if (step1) {
+      for (var i = 0; i <= 7; i++) {
+        var idkey = 'id' + (i ? i : '');
+        var idvalue = step1[idkey]
+        var levelkey = 'level' + (i ? i : '');
+        var stonekey = 'stone' + (i ? i : '');
+        var happinesskey = 'happiness' + (i ? i : '');
+        var exchangekey = 'exchange' + (i ? i : '');
+        var otherkey = 'other' + (i ? i : '');
+        var sprite = idvalue ? this.getItemById(idvalue) : {};
+        var e = {
+          id: step1[idkey],
+          level: step1[levelkey],
+          stone: step1[stonekey],
+          happiness: step1[happinesskey],
+          exchange: step1[exchangekey],
+          other: step1[otherkey],
+          index: sprite.index,
+          name: sprite.name,
+          cname: sprite.cname,
+          className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty'
+        }
+        step1List.push(e);
+      }
+    }
+    item.evolutmax = [];
+    for (var i = 0; i <= 7; i++) {
+      var s1 = step1List[i] || { id: undefined, className: 'empty' };
+      var s2 = step2List[i] || { id: undefined, className: 'empty', stand: 'stand' };
+      var s3 = step3List[i] || { id: undefined, className: 'empty', stand: 'stand' };
+      if (s1.id || s2.id || s3.id) {
+        var list = [];
+        list.push(s1);
+        list.push(s2);
+        list.push(s3);
+        item.evolutmax.push(list);
+      }
+    }
+    return sprite;
   },
   // 多属性查询精灵
   search: function (key, queryString) {
@@ -37,6 +139,7 @@ var globalObject = {
     }
     return results;
   },
+  // 筛选
   filter: function (queryObject) {
     if (!queryObject) {
       return this.spriteList;
