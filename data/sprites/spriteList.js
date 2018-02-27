@@ -4881,7 +4881,7 @@ module.exports = [{
     "ground"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "地面"
   ],
   "ability": [
@@ -4939,7 +4939,7 @@ module.exports = [{
     "electric"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "电"
   ],
   "ability": [
@@ -4996,7 +4996,7 @@ module.exports = [{
     "ground"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "地面"
   ],
   "ability": [
@@ -5054,7 +5054,7 @@ module.exports = [{
     "electric"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "电"
   ],
   "ability": [
@@ -5111,7 +5111,7 @@ module.exports = [{
     "ground"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "地面"
   ],
   "ability": [
@@ -5169,7 +5169,7 @@ module.exports = [{
     "electric"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "电"
   ],
   "ability": [
@@ -6388,7 +6388,7 @@ module.exports = [{
     "ground"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "地面"
   ],
   "ability": [
@@ -7298,7 +7298,7 @@ module.exports = [{
   ],
   "ctype": [
     "地面",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "lightningrod",
@@ -7355,7 +7355,7 @@ module.exports = [{
   ],
   "ctype": [
     "地面",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "lightningrod",
@@ -8888,7 +8888,7 @@ module.exports = [{
     "water"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "水"
   ],
   "ability": [
@@ -8940,7 +8940,7 @@ module.exports = [{
     "water"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "水"
   ],
   "ability": [
@@ -8992,7 +8992,7 @@ module.exports = [{
     "water"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "水"
   ],
   "ability": [
@@ -9044,7 +9044,7 @@ module.exports = [{
     "water"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "水"
   ],
   "ability": [
@@ -9096,7 +9096,7 @@ module.exports = [{
     "flying"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "飞行"
   ],
   "ability": [
@@ -9144,7 +9144,7 @@ module.exports = [{
     "flying"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "飞行"
   ],
   "ability": [
@@ -11476,7 +11476,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -13004,7 +13004,7 @@ module.exports = [{
   ],
   "ctype": [
     "虫",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -13339,7 +13339,7 @@ module.exports = [{
   ],
   "ctype": [
     "火",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "magmaarmor",
@@ -13498,7 +13498,7 @@ module.exports = [{
   ],
   "ctype": [
     "水",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "hustle",
@@ -14715,7 +14715,7 @@ module.exports = [{
     "ground"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "地面"
   ],
   "ability": [
@@ -14767,7 +14767,7 @@ module.exports = [{
     "ground"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "地面"
   ],
   "ability": [
@@ -14818,7 +14818,7 @@ module.exports = [{
     "dark"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "恶"
   ],
   "ability": [
@@ -14871,7 +14871,7 @@ module.exports = [{
     "dark"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "恶"
   ],
   "ability": [
@@ -17693,7 +17693,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -18027,7 +18027,7 @@ module.exports = [{
   ],
   "ctype": [
     "钢",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -18080,7 +18080,7 @@ module.exports = [{
   ],
   "ctype": [
     "钢",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -18133,7 +18133,7 @@ module.exports = [{
   ],
   "ctype": [
     "钢",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -19940,7 +19940,7 @@ module.exports = [{
     "psychic"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "超能力"
   ],
   "ability": [
@@ -19983,7 +19983,7 @@ module.exports = [{
     "psychic"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "超能力"
   ],
   "ability": [
@@ -20328,7 +20328,7 @@ module.exports = [{
     "grass"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "草"
   ],
   "ability": [
@@ -20377,7 +20377,7 @@ module.exports = [{
     "grass"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "草"
   ],
   "ability": [
@@ -20426,7 +20426,7 @@ module.exports = [{
     "bug"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "虫"
   ],
   "ability": [
@@ -20475,7 +20475,7 @@ module.exports = [{
     "bug"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "虫"
   ],
   "ability": [
@@ -21787,7 +21787,7 @@ module.exports = [{
   ],
   "ctype": [
     "水",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "swiftswim",
@@ -22295,7 +22295,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "clearbody",
@@ -24143,7 +24143,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "moldbreaker",
@@ -24191,7 +24191,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "moldbreaker",
@@ -24240,7 +24240,7 @@ module.exports = [{
     "steel"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "钢"
   ],
   "ability": [
@@ -24290,7 +24290,7 @@ module.exports = [{
     "steel"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "钢"
   ],
   "ability": [
@@ -25775,7 +25775,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -27228,7 +27228,7 @@ module.exports = [{
   ],
   "ctype": [
     "地面",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "lightningrod",
@@ -27930,7 +27930,7 @@ module.exports = [{
     "steel"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "钢"
   ],
   "ability": [
@@ -30505,7 +30505,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -30557,7 +30557,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -30609,7 +30609,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -32307,7 +32307,7 @@ module.exports = [{
   ],
   "ctype": [
     "虫",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -32358,7 +32358,7 @@ module.exports = [{
   ],
   "ctype": [
     "虫",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "sturdy",
@@ -32652,7 +32652,7 @@ module.exports = [{
   ],
   "ctype": [
     "水",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "solidrock",
@@ -32704,7 +32704,7 @@ module.exports = [{
   ],
   "ctype": [
     "水",
-    "岩"
+    "岩石"
   ],
   "ability": [
     "solidrock",
@@ -32755,7 +32755,7 @@ module.exports = [{
     "flying"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "飞行"
   ],
   "ability": [
@@ -32805,7 +32805,7 @@ module.exports = [{
     "flying"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "飞行"
   ],
   "ability": [
@@ -36350,7 +36350,7 @@ module.exports = [{
     "fighting"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "格斗"
   ],
   "ability": [
@@ -39519,7 +39519,7 @@ module.exports = [{
     "dragon"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "龙"
   ],
   "ability": [
@@ -39567,7 +39567,7 @@ module.exports = [{
     "dragon"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "龙"
   ],
   "ability": [
@@ -39615,7 +39615,7 @@ module.exports = [{
     "ice"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "冰"
   ],
   "ability": [
@@ -39662,7 +39662,7 @@ module.exports = [{
     "ice"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "冰"
   ],
   "ability": [
@@ -39862,7 +39862,7 @@ module.exports = [{
     "fairy"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "妖精"
   ],
   "ability": [
@@ -40705,7 +40705,7 @@ module.exports = [{
     "fairy"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "妖精"
   ],
   "ability": [
@@ -40749,7 +40749,7 @@ module.exports = [{
     "fairy"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "妖精"
   ],
   "ability": [
@@ -41864,6 +41864,7 @@ module.exports = [{
   "id": "741",
   "name": "Oricorio",
   "cname": "花舞鸟",
+  "form": "Baile",
   "species": "舞蹈",
   "generation": 7,
   "gendercode": 191,
@@ -42165,7 +42166,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "keeneye",
@@ -42182,13 +42183,18 @@ module.exports = [{
     "id": "744"
   }, {
     "id": "745",
-    "level": 25
+    "other": "Lv.25日版白天",
+    "id1": "745a",
+    "other1": "Lv.25月版夜晚",
+    "id2": "745b",
+    "other2": "Lv.25"
   }],
   "index": 843
 }, {
   "id": "745",
   "name": "Lycanroc",
   "cname": "鬃岩狼人",
+  "form": "Midday",
   "species": "狼",
   "generation": 7,
   "gendercode": 127,
@@ -42213,7 +42219,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "keeneye",
@@ -42230,7 +42236,11 @@ module.exports = [{
     "id": "744"
   }, {
     "id": "745",
-    "level": 25
+    "other": "Lv.25日版白天",
+    "id1": "745a",
+    "other1": "Lv.25月版夜晚",
+    "id2": "745b",
+    "other2": "Lv.25"
   }],
   "index": 844
 }, {
@@ -42262,7 +42272,7 @@ module.exports = [{
     "rock"
   ],
   "ctype": [
-    "岩"
+    "岩石"
   ],
   "ability": [
     "keeneye",
@@ -42278,10 +42288,65 @@ module.exports = [{
   "evolutions": [{
     "id": "744"
   }, {
-    "id": "745a",
-    "level": 25
+    "id": "745",
+    "other": "Lv.25日版白天",
+    "id1": "745a",
+    "other1": "Lv.25月版夜晚",
+    "id2": "745b",
+    "other2": "Lv.25"
   }],
   "index": 845
+}, {
+  "id": "745b",
+  "name": "Lycanroc",
+  "cname": "鬃岩狼人",
+  "form": "Dusk",
+  "species": "狼",
+  "generation": 7,
+  "gendercode": 127,
+  "captureRate": 90,
+  "baseStats": {
+    "HP": 75,
+    "ATK": 117,
+    "DEF": 65,
+    "SPA": 55,
+    "SPD": 65,
+    "SPE": 110
+  },
+  "addStats": {
+    "HP": 0,
+    "ATK": 2,
+    "DEF": 0,
+    "SPA": 0,
+    "SPD": 0,
+    "SPE": 0
+  },
+  "type": [
+    "rock"
+  ],
+  "ctype": [
+    "岩石"
+  ],
+  "ability": [
+    "toughclaws"
+  ],
+  "eggGroup": [
+    "field"
+  ],
+  "area": [
+    "alk"
+  ],
+  "evolutions": [{
+    "id": "744"
+  }, {
+    "id": "745",
+    "other": "Lv.25日版白天",
+    "id1": "745a",
+    "other1": "Lv.25月版夜晚",
+    "id2": "745b",
+    "other2": "Lv.25"
+  }],
+  "index": 846
 }, {
   "id": "746",
   "name": "Wishiwashi",
@@ -42322,7 +42387,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 846
+  "index": 847
 }, {
   "id": "746a",
   "name": "Wishiwashi",
@@ -42364,7 +42429,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 847
+  "index": 848
 }, {
   "id": "747",
   "name": "Mareanie",
@@ -42414,7 +42479,7 @@ module.exports = [{
     "id": "748",
     "level": 38
   }],
-  "index": 848
+  "index": 849
 }, {
   "id": "748",
   "name": "Toxapex",
@@ -42464,7 +42529,7 @@ module.exports = [{
     "id": "748",
     "level": 38
   }],
-  "index": 849
+  "index": 850
 }, {
   "id": "749",
   "name": "Mudbray",
@@ -42512,7 +42577,7 @@ module.exports = [{
     "id": "750",
     "level": 30
   }],
-  "index": 850
+  "index": 851
 }, {
   "id": "750",
   "name": "Mudsdale",
@@ -42560,7 +42625,7 @@ module.exports = [{
     "id": "750",
     "level": 30
   }],
-  "index": 851
+  "index": 852
 }, {
   "id": "751",
   "name": "Dewpider",
@@ -42610,7 +42675,7 @@ module.exports = [{
     "id": "752",
     "level": 22
   }],
-  "index": 852
+  "index": 853
 }, {
   "id": "752",
   "name": "Araquanid",
@@ -42660,7 +42725,7 @@ module.exports = [{
     "id": "752",
     "level": 22
   }],
-  "index": 853
+  "index": 854
 }, {
   "id": "753",
   "name": "Fomantis",
@@ -42707,7 +42772,7 @@ module.exports = [{
     "id": "754",
     "other": "Lv.34白天"
   }],
-  "index": 854
+  "index": 855
 }, {
   "id": "754",
   "name": "Lurantis",
@@ -42754,7 +42819,7 @@ module.exports = [{
     "id": "754",
     "other": "Lv.34白天"
   }],
-  "index": 855
+  "index": 856
 }, {
   "id": "755",
   "name": "Morelull",
@@ -42804,7 +42869,7 @@ module.exports = [{
     "id": "756",
     "level": 24
   }],
-  "index": 856
+  "index": 857
 }, {
   "id": "756",
   "name": "Shiinotic",
@@ -42854,7 +42919,7 @@ module.exports = [{
     "id": "756",
     "level": 24
   }],
-  "index": 857
+  "index": 858
 }, {
   "id": "757",
   "name": "Salandit",
@@ -42904,7 +42969,7 @@ module.exports = [{
     "id": "758",
     "other": "♀Lv.33"
   }],
-  "index": 858
+  "index": 859
 }, {
   "id": "758",
   "name": "Salazzle",
@@ -42954,7 +43019,7 @@ module.exports = [{
     "id": "758",
     "other": "♀Lv.33"
   }],
-  "index": 859
+  "index": 860
 }, {
   "id": "759",
   "name": "Stufful",
@@ -43004,7 +43069,7 @@ module.exports = [{
     "id": "760",
     "level": 27
   }],
-  "index": 860
+  "index": 861
 }, {
   "id": "760",
   "name": "Bewear",
@@ -43054,7 +43119,7 @@ module.exports = [{
     "id": "760",
     "level": 27
   }],
-  "index": 861
+  "index": 862
 }, {
   "id": "761",
   "name": "Bounsweet",
@@ -43105,7 +43170,7 @@ module.exports = [{
     "id": "763",
     "other": "学会踩踏"
   }],
-  "index": 862
+  "index": 863
 }, {
   "id": "762",
   "name": "Steenee",
@@ -43156,7 +43221,7 @@ module.exports = [{
     "id": "763",
     "other": "学会踩踏"
   }],
-  "index": 863
+  "index": 864
 }, {
   "id": "763",
   "name": "Tsareena",
@@ -43207,7 +43272,7 @@ module.exports = [{
     "id": "763",
     "other": "学会踩踏"
   }],
-  "index": 864
+  "index": 865
 }, {
   "id": "764",
   "name": "Comfey",
@@ -43250,7 +43315,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 865
+  "index": 866
 }, {
   "id": "765",
   "name": "Oranguru",
@@ -43295,7 +43360,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 866
+  "index": 867
 }, {
   "id": "766",
   "name": "Passimian",
@@ -43337,7 +43402,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 867
+  "index": 868
 }, {
   "id": "767",
   "name": "Wimpod",
@@ -43386,7 +43451,7 @@ module.exports = [{
     "id": "768",
     "level": 30
   }],
-  "index": 868
+  "index": 869
 }, {
   "id": "768",
   "name": "Golisopod",
@@ -43435,7 +43500,7 @@ module.exports = [{
     "id": "768",
     "level": 30
   }],
-  "index": 869
+  "index": 870
 }, {
   "id": "769",
   "name": "Sandygast",
@@ -43484,7 +43549,7 @@ module.exports = [{
     "id": "770",
     "level": 42
   }],
-  "index": 870
+  "index": 871
 }, {
   "id": "770",
   "name": "Palossand",
@@ -43533,7 +43598,7 @@ module.exports = [{
     "id": "770",
     "level": 42
   }],
-  "index": 871
+  "index": 872
 }, {
   "id": "771",
   "name": "Pyukumuku",
@@ -43575,7 +43640,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 872
+  "index": 873
 }, {
   "id": "772",
   "name": "Type:Null",
@@ -43621,7 +43686,7 @@ module.exports = [{
     "id": "773",
     "other": "亲密度220"
   }],
-  "index": 873
+  "index": 874
 }, {
   "id": "773",
   "name": "Silvally",
@@ -43667,7 +43732,7 @@ module.exports = [{
     "id": "773",
     "other": "亲密度220"
   }],
-  "index": 874
+  "index": 875
 }, {
   "id": "774",
   "name": "Minior",
@@ -43697,7 +43762,7 @@ module.exports = [{
     "flying"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "飞行"
   ],
   "ability": [
@@ -43710,7 +43775,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 875
+  "index": 876
 }, {
   "id": "775",
   "name": "Komala",
@@ -43751,7 +43816,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 876
+  "index": 877
 }, {
   "id": "776",
   "name": "Turtonator",
@@ -43795,7 +43860,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 877
+  "index": 878
 }, {
   "id": "777",
   "name": "Togedemaru",
@@ -43841,7 +43906,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 878
+  "index": 879
 }, {
   "id": "778",
   "name": "Mimikyu",
@@ -43884,7 +43949,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 879
+  "index": 880
 }, {
   "id": "779",
   "name": "Bruxish",
@@ -43929,7 +43994,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 880
+  "index": 881
 }, {
   "id": "780",
   "name": "Drampa",
@@ -43975,7 +44040,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 881
+  "index": 882
 }, {
   "id": "781",
   "name": "Dhelmise",
@@ -44018,7 +44083,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 882
+  "index": 883
 }, {
   "id": "782",
   "name": "Jangmo-o",
@@ -44069,7 +44134,7 @@ module.exports = [{
     "id": "784",
     "level": 45
   }],
-  "index": 883
+  "index": 884
 }, {
   "id": "783",
   "name": "Hakamo-o",
@@ -44122,7 +44187,7 @@ module.exports = [{
     "id": "784",
     "level": 45
   }],
-  "index": 884
+  "index": 885
 }, {
   "id": "784",
   "name": "Kommo-o",
@@ -44175,7 +44240,7 @@ module.exports = [{
     "id": "784",
     "level": 45
   }],
-  "index": 885
+  "index": 886
 }, {
   "id": "785",
   "name": "TapuKoko",
@@ -44219,7 +44284,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 886
+  "index": 887
 }, {
   "id": "786",
   "name": "TapuLele",
@@ -44263,7 +44328,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 887
+  "index": 888
 }, {
   "id": "787",
   "name": "TapuBulu",
@@ -44307,7 +44372,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 888
+  "index": 889
 }, {
   "id": "788",
   "name": "TapuFini",
@@ -44351,7 +44416,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 889
+  "index": 890
 }, {
   "id": "789",
   "name": "Cosmog",
@@ -44402,7 +44467,7 @@ module.exports = [{
     "id1": "792",
     "other1": "Lv.53月版夜晚"
   }],
-  "index": 890
+  "index": 891
 }, {
   "id": "790",
   "name": "Cosmoem",
@@ -44453,7 +44518,7 @@ module.exports = [{
     "id1": "792",
     "other1": "Lv.53月版夜晚"
   }],
-  "index": 891
+  "index": 892
 }, {
   "id": "791",
   "name": "Solgaleo",
@@ -44506,7 +44571,7 @@ module.exports = [{
     "id1": "792",
     "other1": "Lv.53月版夜晚"
   }],
-  "index": 892
+  "index": 893
 }, {
   "id": "792",
   "name": "Lunala",
@@ -44559,7 +44624,7 @@ module.exports = [{
     "id1": "792",
     "other1": "Lv.53月版夜晚"
   }],
-  "index": 893
+  "index": 894
 }, {
   "id": "793",
   "name": "Nihilego",
@@ -44589,7 +44654,7 @@ module.exports = [{
     "poison"
   ],
   "ctype": [
-    "岩",
+    "岩石",
     "毒"
   ],
   "ability": [
@@ -44602,7 +44667,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 894
+  "index": 895
 }, {
   "id": "794",
   "name": "Buzzwole",
@@ -44645,7 +44710,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 895
+  "index": 896
 }, {
   "id": "795",
   "name": "Pheromosa",
@@ -44688,7 +44753,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 896
+  "index": 897
 }, {
   "id": "796",
   "name": "Xurkitree",
@@ -44729,7 +44794,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 897
+  "index": 898
 }, {
   "id": "797",
   "name": "Celesteela",
@@ -44772,7 +44837,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 898
+  "index": 899
 }, {
   "id": "798",
   "name": "Kartana",
@@ -44815,7 +44880,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 899
+  "index": 900
 }, {
   "id": "799",
   "name": "Guzzlord",
@@ -44858,7 +44923,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 900
+  "index": 901
 }, {
   "id": "800",
   "name": "Necrozma",
@@ -44899,7 +44964,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 901
+  "index": 902
 }, {
   "id": "800a",
   "name": "Necrozma",
@@ -44943,7 +45008,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 902
+  "index": 903
 }, {
   "id": "800b",
   "name": "Necrozma",
@@ -44987,7 +45052,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 903
+  "index": 904
 }, {
   "id": "800c",
   "name": "Necrozma",
@@ -45031,7 +45096,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 904
+  "index": 905
 }, {
   "id": "801",
   "name": "Magearna",
@@ -45074,7 +45139,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 905
+  "index": 906
 }, {
   "id": "802",
   "name": "Marshadow",
@@ -45117,7 +45182,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 906
+  "index": 907
 }, {
   "id": "803",
   "name": "Poipole",
@@ -45163,7 +45228,7 @@ module.exports = [{
     "id": "804",
     "other": "学会龙之波动"
   }],
-  "index": 907
+  "index": 908
 }, {
   "id": "804",
   "name": "Naganadel",
@@ -45211,7 +45276,7 @@ module.exports = [{
     "id": "804",
     "other": "学会龙之波动"
   }],
-  "index": 908
+  "index": 909
 }, {
   "id": "805",
   "name": "Stakataka",
@@ -45254,7 +45319,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 909
+  "index": 910
 }, {
   "id": "806",
   "name": "Blacephalon",
@@ -45297,7 +45362,7 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 910
+  "index": 911
 }, {
   "id": "807",
   "name": "Zeraora",
@@ -45338,5 +45403,5 @@ module.exports = [{
     "alk"
   ],
   "evolutions": [],
-  "index": 911
+  "index": 912
 }]

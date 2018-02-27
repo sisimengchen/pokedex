@@ -8,12 +8,12 @@
       </view>
     </view>
   </view>
-  <view class="infolist">
+  <!-- <view class="infolist">
     <view wx:for="{{adList}}" wx:for-item="ad" wx:key="unique" class="m-info" wx:for-index="index" data-index="{{index}}" bindtap="goto">
       <text>{{ad.infotitle}}</text>
       <view class="m-chevron">
         <image class="chevron" src="/img/chevron.png"></image>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>

@@ -3,6 +3,15 @@ var util = require('../../utils/util.js')
 Page({
   data: {
     updateList: [{
+      version: '1.4',
+      date: '2018.3.4',
+      updateItems: [
+        '更新了鬃岩狼人的进化信息；',
+        '新增性格修正表；',
+        '为了更容易被人发现，小程序更名为“宝可梦图鉴Pokedex”；',
+        '最近发现了一个山寨我们的贱人，他很快就要死了。'
+      ]
+    },{
       version: '1.3',
       date: '2017.12.25',
       updateItems: [
