@@ -7,6 +7,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    navList: [
+      {
+        title: '性格修正表',
+        link: 'character'
+      }
+    ],
     infoList: [
       {
         title: '关于宝可梦图鉴',

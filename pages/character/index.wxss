@@ -1,0 +1,64 @@
+/* pages/character/index.wxss */
+
+.tablelist {
+  width: 100%;
+}
+
+.m-table {
+}
+
+.m-table .m-thead {
+  display: block;
+  color: #888;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+  padding-bottom: 15rpx;
+}
+
+.m-table .m-tbody {
+  background-color: #fff;
+}
+
+.m-info {
+  box-sizing: border-box;
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: #000;
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+  border-top: 1rpx solid #e5e5e5;
+}
+
+.m-info:first-child {
+  border-top: 0rpx;
+}
+
+.m-info .m-chevron {
+  float: right;
+  margin-left: 30rpx;
+}
+
+.m-info .m-chevron .chevron {
+  width: 16rpx;
+  height: 26rpx;
+  vertical-align: middle;
+}
+
+.m-ititle {
+  flex: 1;
+}
+
+.m-iplus {
+  flex: 1;
+  color: #dc4343;
+  text-align: center;
+}
+
+.m-iminus {
+  flex: 1;
+  color: #2d95ff;
+  text-align: right;
+}

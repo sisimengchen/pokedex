@@ -1,0 +1,15 @@
+<!--pages/character/index.wxml-->
+<view class="container">
+  <view class="tablelist">
+    <view wx:for="{{tables}}" wx:for-item="table" wx:key="unique" class="m-table">
+      <text class="m-thead">{{table.title}}</text>
+      <view class="m-tbody">
+        <view wx:for="{{table.data}}" wx:for-item="item" wx:key="unique" class="m-info">
+          <text class="m-ititle">{{item.title}}</text>
+          <text class="m-iplus" wx:if="{{item.plus}}">+{{item.plus}}</text>
+          <text class="m-iminus" wx:if="{{item.minus}}">-{{item.minus}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

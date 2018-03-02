@@ -10,7 +10,7 @@
     "pages/abilitydetail/index",
     "pages/logs/logs",
     "pages/info/index",
-    "pages/advertisement/index"
+    "pages/character/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

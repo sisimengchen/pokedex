@@ -1,6 +1,14 @@
 <!--index.wxml-->
 <view class="container">
   <view class="infolist">
+    <view wx:for="{{navList}}" wx:for-item="nav" wx:key="unique" class="m-info" data-link="{{nav.link}}" bindtap="goto">
+      <text>{{nav.title}}</text>
+      <view class="m-chevron">
+        <image class="chevron" src="/img/chevron.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="infolist">
     <view wx:for="{{infoList}}" wx:for-item="info" wx:key="unique" class="m-info" data-link="{{info.link}}" bindtap="goto">
       <text>{{info.title}}</text>
       <view class="m-chevron">
