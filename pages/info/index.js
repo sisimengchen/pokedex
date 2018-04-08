@@ -17,6 +17,10 @@ Page({
       {
         title: '关于宝可梦图鉴',
         link: 'about'
+      },
+      {
+        title: '山寨去死',
+        link: 'copycat'
       }
     ],
     adList: []

@@ -1,0 +1,134 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 16rpx;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: #efeff4;
+}
+
+.searchctn {
+  float: left;
+  width: 100%;
+  height: 56rpx;
+  line-height: 56rpx;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-size: 26rpx;
+  color: #b2b2b2;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.contorl {
+  float: left;
+  height: 56rpx;
+  line-height: 56rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.contorl image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 12rpx;
+}
+
+.contorl button {
+  margin: 0;
+  padding: 0;
+  position: static;
+  line-height: inherit;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 28rpx;
+  color: #dc4343;
+}
+
+.spriteList {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 0;
+}
+.stand {
+  height: 88rpx;
+}
+.sprite {
+  display: block;
+  margin: 0 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: #353535;
+  border-bottom: 1rpx solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.sprite .name {
+  margin-left: 20rpx;
+}
+
+.sprite .types {
+  float: right;
+}
+
+.sprite .types .m-type {
+  margin-left: 20rpx;
+}
+
+.sprite .movetypes {
+  float: right;
+}
+
+.sprite .movetypes .m-movetype {
+  margin-left: 20rpx;
+}
+
+.sprite .power {
+  float: right;
+  color: #353535;
+  font-size: 34rpx;
+}
+
+.filter {
+  display: block;
+  position: absolute;
+  bottom: 60rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160rpx;
+  height: 80rpx;
+  z-index: 1;
+}

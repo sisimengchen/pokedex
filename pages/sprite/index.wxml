@@ -17,6 +17,17 @@
       <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
     </view>
   </view>
+   <view class="moveInfo ctn" bindtap="tapMove" data-id="{{sprite.id}}">
+    <text>招式列表</text>
+    <view class="m-chevron">
+      <image class="chevron" src="/img/chevron.png"></image>
+    </view>
+    <view class="movetypes">
+      <image class="m-movetype" src="/img/icon_move_physical.png"></image>
+      <image class="m-movetype" src="/img/icon_move_special.png"></image>
+      <image class="m-movetype" src="/img/icon_move_status.png"></image>
+    </view>
+  </view> 
   <text class="ctntitle">基本信息</text>
   <view class="baseInfo ctn">
     <view class="item">
@@ -121,7 +132,7 @@
       <text class="title">总和</text>
       <view class="content">
         <text class="pTitle">{{sprite.baseStats.HP + sprite.baseStats.ATK + sprite.baseStats.DEF + sprite.baseStats.SPA + sprite.baseStats.SPD + sprite.baseStats.SPE}}</text>
-        <progress percent="1" stroke-width="15" active activeColor="#6595FF" style="visibility:hidden"/>
+        <progress percent="1" stroke-width="15" active activeColor="#6595FF" style="visibility:hidden" />
       </view>
     </view>
   </view>

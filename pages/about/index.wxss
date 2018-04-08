@@ -1,12 +1,12 @@
 page {
   background-color: #fff;
-  padding-bottom:120rpx;
+  padding-bottom: 120rpx;
 }
 
 .updateList {
   margin: 30rpx;
-  padding-bottom:30rpx;
-  border-bottom: 1rpx solid #E5E5E5;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
 }
 
 .version {
@@ -19,7 +19,7 @@ page {
   font-size: 26rpx;
   color: #888;
   line-height: 37rpx;
-  margin-bottom:10rpx;
+  margin-bottom: 10rpx;
 }
 
 .itemList {
@@ -36,6 +36,7 @@ page {
   color: #888;
   font-size: 20rpx;
   text-align: center;
+  padding-top: 30rpx;
   padding-bottom: 30rpx;
   background-color: #fff;
 }

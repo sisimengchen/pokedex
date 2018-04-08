@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="m-move" data-id="{{move.id}}">
+    <!-- <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image> -->
+    <view class="m-info">
+      <text class="name">{{move.cname}}</text>
+      <image wx:if="{{move.tm}}" class="tmpic" src="/img/icon_move_tm.png"></image>
+      <text wx:if="{{move.tm}}" class="tm">TM.{{move.tm}}</text>
+      <view class="types">
+        <text class="m-type {{move.type}}">{{move.ctype}}</text>
+      </view>
+      <view class="movetypes">
+        <image class="m-movetype {{type}}" src="/img/icon_move_{{move.movetype}}.png"></image>
+      </view>
+    </view>
+    <view class="m-numbers">
+      <view class="m-number">
+        <text>威力</text>
+        <text class="value">{{move.power}}</text>
+      </view>
+      <view class="m-number">
+        <text>命中率</text>
+        <text class="value">{{move.accuracy}}</text>
+        <view class="line"></view>
+      </view>
+      <view class="m-number">
+        <text>PP</text>
+        <text class="value">{{move.pp}}</text>
+        <view class="line"></view>
+      </view>
+      <view class="m-number">
+        <text>先置</text>
+        <text class="value">{{move.prior}}</text>
+        <view class="line"></view>
+      </view>
+      <view class="m-number">
+        <text>Z威力</text>
+        <text class="value">{{move.z}}</text>
+        <view class="line"></view>
+      </view>
+    </view>
+  </view>
+  <text class="ctntitle">对战效果</text>
+  <view class="ctn effect">
+    {{move.effect}}
+  </view>
+  <view wx:if="{{move.levels.length}}" class="ctntitle">可通过<text class="red">升级</text>学会该招式的宝可梦</view>
+  <view wx:if="{{move.levels.length}}" class="ctn">
+    <view wx:for="{{move.levels}}" class="sprite" wx:for-item="sprite" wx:key="unique" data-id="{{sprite.id}}" data-index="{{sprite.index}}" bindtap="tapSprite">
+      <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
+      <text class="name">{{sprite.cname + (sprite.form || '')}}</text>
+      <view class="types">
+        <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
+      </view>
+    </view>
+  </view>
+  <text wx:if="{{move.tms.length}}" class="ctntitle">可通过<text class="red">技能机器</text>学会该招式的宝可梦</text>
+  <view wx:if="{{move.inherits.length}}" class="ctn">
+    <view wx:for="{{move.tms}}" class="sprite" wx:for-item="sprite" wx:key="unique" data-id="{{sprite.id}}" data-index="{{sprite.index}}" bindtap="tapSprite">
+      <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
+      <text class="name">{{sprite.cname + (sprite.form || '')}}</text>
+      <view class="types">
+        <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
+      </view>
+    </view>
+  </view>
+  <text wx:if="{{move.inherits.length}}" class="ctntitle">可通过<text class="red">遗传</text>学会该招式的宝可梦</text>
+  <view wx:if="{{move.levels.length}}" class="ctn">
+    <view wx:for="{{move.inherits}}" class="sprite" wx:for-item="sprite" wx:key="unique" data-id="{{sprite.id}}" data-index="{{sprite.index}}" bindtap="tapSprite">
+      <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
+      <text class="name">{{sprite.cname + (sprite.form || '')}}</text>
+      <view class="types">
+        <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
+      </view>
+    </view>
+  </view>
+  <text wx:if="{{move.others.length}}" class="ctntitle">可通过<text class="red">其他</text>学会该招式的宝可梦</text>
+  <view wx:if="{{move.others.length}}" class="ctn">
+    <view wx:for="{{move.others}}" class="sprite" wx:for-item="sprite" wx:key="unique" data-id="{{sprite.id}}" data-index="{{sprite.index}}" bindtap="tapSprite">
+      <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
+      <text class="name">{{sprite.cname + (sprite.form || '')}}</text>
+      <view class="types">
+        <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
+      </view>
+    </view>
+  </view>
+</view>

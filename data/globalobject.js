@@ -1,4 +1,5 @@
 import spriteList from './sprites/spriteList.js';
+import moveList from './moves/moveList.js';
 var globalObject = {
   // 精灵列表
   spriteList: spriteList,
@@ -202,6 +203,72 @@ var globalObject = {
       }
       if (isAreaOk && isTypeOk && isGenerationOk && isEggGroupOk) {
         results.push(sprite);
+      }
+    }
+    return results;
+  },
+  // 招式列表
+  moveList: moveList,
+  // id查询招式
+  getMoveById: function (id) {
+    for (var i = 0, size = this.moveList.length; i < size; i++) {
+      var item = this.moveList[i];
+      if (id == item.id) {
+        return item;
+      }
+    }
+  },
+  // 多属性查询招式
+  searchMove: function (key, queryString) {
+    var results = [];
+    var keys = key.split(',');
+    for (var i = 0, size = this.moveList.length; i < size; i++) {
+      var item = this.moveList[i];
+      for (var j = 0, jsize = keys.length; j < jsize; j++) {
+        if (item[keys[j]].toLowerCase().indexOf(queryString.toLowerCase()) >= 0) {
+          results.push(item);
+          break;
+        }
+      }
+    }
+    return results;
+  },
+  // 筛选招式
+  filterMove: function (queryObject) {
+    if (!queryObject) {
+      return this.moveList;
+    }
+    var results = [];
+    var qtype = queryObject.type;
+    var qmovetype = queryObject.movetype;
+    for (let i = 0, size = this.moveList.length; i < size; i++) {
+      var move = this.moveList[i];
+      var type = move.type;
+      var movetype = move.movetype;
+      var isTypeOk = qtype && qtype.length ? false : true;
+      var isMovetypeOk = qmovetype && qmovetype.length ? false : true;
+      if (!isTypeOk) {
+        for (let j = 0, l = qtype.length; j < l; j++) {
+          if (type.indexOf(qtype[j]) >= 0) {
+            isTypeOk = true;
+          } else {
+            isTypeOk = false;
+            break;
+          }
+        }
+      }
+      if (isTypeOk && !isMovetypeOk) {
+        for (let j = 0, l = qmovetype.length; j < l; j++) {
+          if (movetype.indexOf(qmovetype[j]) >= 0) {
+            isMovetypeOk = true;
+          } else {
+            isMovetypeOk = false;
+            break;
+          }
+        }
+      }
+      if (isTypeOk && isMovetypeOk) {
+        results.push(move);
       }
     }
     return results;

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="m-tabs" catchtap="tapTabs">
+    <text class="m-tab{{item.isActive?' active':''}}" wx:for="{{tabs}}" wx:for-index="index" wx:key="unique" data-id="{{index}}">{{item.name}}</text>
+  </view>
+  <view class="m-contents">
+    <view catchtap="tapItem" wx:for-item="tabItem" class="m-content{{tabItem.isActive?' active':''}}" data-id="{{tabItem.id}}" wx:for="{{tabs}}" wx:for-index="index" wx:key="unique">
+      <view class="item" wx:for="{{tabItem.items}}" wx:for-index="name" wx:key="unique" data-id="{{item.id}}">
+        <view class="left" data-id="{{item.id}}">
+          <image data-id="{{item.id}}" wx:if="{{tabItem.id == 'movetype'}}" src="/img/icon_move_{{item.id}}.png"></image>
+          <text class="m-{{tabItem.id}} {{item.id}}" data-id="{{item.id}}">{{item.value}}</text>
+        </view>
+        <view class="right" data-id="{{item.id}}">
+          <image data-id="{{item.id}}" wx:if="{{item.checked}}" src="/img/select.png"></image>
+          <image data-id="{{item.id}}" wx:else src="/img/unselect.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="buttons">
+    <view class="btn" catchtap="clear">清空</view>
+    <view class="btn confirm" catchtap="confirm">确定</view>
+  </view>
+</view>

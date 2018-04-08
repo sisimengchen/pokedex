@@ -10,7 +10,14 @@
     "pages/abilitydetail/index",
     "pages/logs/logs",
     "pages/info/index",
-    "pages/character/index"
+    "pages/character/index",
+    "pages/copycat/index",
+    "pages/movement/index/index",
+    "pages/movement/detail/index",
+    "pages/movement/filter/index",
+    "pages/movement/filterout/index",
+    "pages/movement/search/index",
+    "pages/movement/sprite/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,6 +37,12 @@
         "text": "宝可梦",
         "iconPath": "/img/icon_tabbar_pokemon_normal.png",
         "selectedIconPath": "/img/icon_tabbar_pokemon_selected.png"
+      },
+      {
+        "pagePath": "pages/movement/index/index",
+        "text": "招式",
+        "iconPath": "/img/icon_tabbar_moves_normal.png",
+        "selectedIconPath": "/img/icon_tabbar_moves_selected.png"
       },
       {
         "pagePath": "pages/info/index",

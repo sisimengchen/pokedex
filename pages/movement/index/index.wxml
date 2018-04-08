@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <form class="top" bindreset="clearSearch">
+    <view class="searchctn">
+      <image src="/img/icon_search.png"></image>
+      <view class="search" bindtap="onFocus">
+        <text>请输入招式名</text>
+      </view>
+    </view>
+  </form>
+  <scroll-view scroll-y="true" scroll-top="0" bindscroll="onScroll" wx:if="moveList" class="spriteList">
+    <view class="stand"></view>
+    <view wx:for="{{moveList}}" class="sprite" wx:for-item="move" wx:key="unique" data-id="{{move.id}}" data-index="{{move.index}}" bindtap="tapSprite">
+      <text class="name">{{move.cname}}</text>
+      <view class="types">
+        <text class="m-type {{move.type}}">{{move.ctype}}</text>
+      </view>
+      <view class="movetypes">
+        <image class="m-movetype" src="/img/icon_move_{{move.movetype}}.png"></image>
+      </view>
+      <text class="power">{{move.power}}</text>
+    </view>
+  </scroll-view>
+  <image class="filter" wx:if="{{isFilter}}" bindtap="tapFilter" src="/img/filterover.png"></image>
+  <image class="filter" wx:else bindtap="tapFilter" src="/img/filter.png"></image>
+</view>

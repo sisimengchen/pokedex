@@ -110,6 +110,22 @@
   padding-right: 60rpx;
 }
 
+.moveInfo {
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.moveInfo .movetypes {
+  float: right;
+}
+
+.moveInfo .movetypes .m-movetype {
+  margin-left: 20rpx;
+}
+
 .baseInfo .item .content text {
   margin-right: 10rpx;
 }
@@ -167,7 +183,7 @@
 .evolutions .evoItem {
   width: 160rpx;
   float: left;
-  border-radius:8rpx;
+  border-radius: 8rpx;
 }
 
 .evolutions .join {

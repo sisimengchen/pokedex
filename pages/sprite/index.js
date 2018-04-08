@@ -103,13 +103,20 @@ Page({
       });
     }
   },
+  tapMove: function (event) {
+    // console.log(event);
+    var id = event.currentTarget.dataset.id;
+    if (id) {
+      // wx.showToast({
+      //   mask: true,
+      //   title: '功能开发中'
+      // });
+      wx.navigateTo({
+        url: '/pages/movement/sprite/index' + '?id=' + id
+      });
+    }
+  },
   tapSprite: function (event) {
-    // var index = event.currentTarget.dataset.index + '';
-    // if (parseInt(index) > -1 && index != (this.data.sprite.index + '')) {
-    //   wx.navigateTo({
-    //     url: '/pages/sprite/index?index=' + index
-    //   });
-    // }
     var id = event.currentTarget.dataset.id;
     if (id && id != this.data.sprite.id) {
       wx.redirectTo({

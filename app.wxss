@@ -82,6 +82,14 @@ page {
   margin-left: 20rpx;
 }
 
+.m-sprite .movetypes {
+  float: right;
+}
+
+.m-sprite .movetypes .m-movetype {
+  margin-left: 20rpx;
+}
+
 .m-chevron {
   float: right;
   margin-left: 30rpx;
@@ -187,4 +195,11 @@ page {
 
 .fairy {
   background-color: #ffa6ff;
+}
+
+.m-movetype {
+  display: inline-block;
+  width: 40rpx;
+  height: 32rpx;
+  vertical-align: middle;
 }
