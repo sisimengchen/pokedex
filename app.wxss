@@ -200,6 +200,6 @@ page {
 .m-movetype {
   display: inline-block;
   width: 40rpx;
-  height: 32rpx;
+  height: 40rpx;
   vertical-align: middle;
 }

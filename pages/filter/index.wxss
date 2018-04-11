@@ -19,10 +19,12 @@
 
 .m-contents .m-content .item .left {
   text-align: left;
+  line-height:88rpx;
 }
 
 .m-contents .m-content .item .right {
   text-align: right;
+  line-height:88rpx;
 }
 
 .m-contents .m-content .item .left .m-eggGroup {

@@ -91,9 +91,11 @@
   background-color: #fff;
   z-index: 0;
 }
+
 .stand {
   height: 88rpx;
 }
+
 .sprite {
   display: block;
   margin: 0 30rpx;
@@ -106,23 +108,25 @@
 }
 
 .sprite .name {
-  margin-left: 20rpx;
+  /* margin-left: 20rpx; */
 }
 
 .sprite .types {
   float: right;
+  line-height: 88rpx;
 }
 
 .sprite .types .m-type {
-  margin-left: 20rpx;
+  margin-left: 30rpx;
 }
 
 .sprite .movetypes {
   float: right;
+  line-height: 88rpx;
 }
 
 .sprite .movetypes .m-movetype {
-  margin-left: 20rpx;
+  margin-left: 50rpx;
 }
 
 .sprite .power {

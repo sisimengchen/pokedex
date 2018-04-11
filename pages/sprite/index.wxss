@@ -120,6 +120,7 @@
 
 .moveInfo .movetypes {
   float: right;
+  line-height:88rpx;
 }
 
 .moveInfo .movetypes .m-movetype {

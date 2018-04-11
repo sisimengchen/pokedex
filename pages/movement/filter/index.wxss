@@ -19,12 +19,13 @@
 
 .m-contents .m-content .item .left {
   text-align: left;
+  line-height: 88rpx;
 }
 
 .m-contents .m-content .item .left image {
   display: inline-block;
   width: 40rpx;
-  height: 32rpx;
+  height: 40rpx;
   vertical-align: middle;
   margin-right: 20rpx;
 }
@@ -35,6 +36,7 @@
 
 .m-contents .m-content .item .right {
   text-align: right;
+  line-height: 88rpx;
 }
 
 .m-contents .m-content .item .left .m-eggGroup {
