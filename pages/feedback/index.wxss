@@ -1,0 +1,38 @@
+page {
+  height: 100%;
+  background-color: #fff;
+}
+
+view {
+  text-align: left;
+  font-size: 26rpx;
+  color: #353535;
+  line-height: 37rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.title {
+  padding-top: 40rpx;
+  line-height: 48rpx;
+  font-size: 34rpx;
+}
+
+.content {
+  padding-top: 20rpx;
+}
+
+.red {
+  color: #dc4343;
+}
+
+button {
+  width: 480rpx;
+  height: 94rpx;
+  background-color: #dc4343;
+  color: #fff;
+  line-height: 94rpx;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  margin-top: 100rpx;
+}

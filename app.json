@@ -17,7 +17,8 @@
     "pages/movement/filter/index",
     "pages/movement/filterout/index",
     "pages/movement/search/index",
-    "pages/movement/sprite/index"
+    "pages/movement/sprite/index",
+    "pages/feedback/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

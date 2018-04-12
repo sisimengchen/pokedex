@@ -1,0 +1,10 @@
+<!--pages/feedback/index.wxml-->
+<view>
+  <view class="title">请将微信升级至最新版本</view>
+  <view class="content">为避免因兼容问题而导致的小程序无法使用，强烈建议各位训练师将微信客户端<text class="red">升级到最新版本</text>，以获得全部能力及接口，保证宝可梦图鉴的最佳使用体验。</view>
+  <view class="title">关于数据</view>
+  <view class="content">招式图鉴的基础能力已于近期上线，我们将在后续几个版本里不断对其进行完善，为了追求更加清晰直观的信息呈现和更好的产品体验，绝大部分招式资料都是手动录入的，数据量实在过于庞大，过程中难免会有疏漏，如您在使用中发现有信息缺失或数据错误，欢迎通过下方的<text class="red">红色按钮</text>向我们反馈，我们将在第一时间改正。</view>
+  <view class="title">侵权举报</view>
+  <view class="content">自2017年9月上线至今，我们的图鉴已多次遭到其他无良开发者的山寨和抄袭，其中手段最卑鄙者竟然直接复制我们的代码，如您在使用微信小程序时发现类似情况，欢迎通过下方的<text class="red">红色按钮</text>向我们举报，对于这种公然侵犯他人著作权的丑恶行为，我们必将死磕到底。</view>
+</view>
+<button class="cs_button" open-type="contact" session-from="weapp">点我提出意见&反馈</button>

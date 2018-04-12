@@ -23,7 +23,10 @@ Page({
         link: 'copycat'
       }
     ],
-    adList: []
+    nav2List: [{
+      title: '意见反馈',
+      link: 'feedback'
+    }]
   },
   onShareAppMessage: function (e) {
   },
