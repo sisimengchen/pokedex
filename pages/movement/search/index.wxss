@@ -111,7 +111,7 @@
 }
 
 .sprite .name {
-  margin-left: 20rpx;
+  /* margin-left: 20rpx; */
 }
 
 .sprite .types {
@@ -119,11 +119,7 @@
 }
 
 .sprite .types .m-type {
-  margin-left: 20rpx;
-}
-
-.sprite .types .m-type {
-  margin-left: 20rpx;
+  margin-left: 30rpx;
 }
 
 .sprite .movetypes {
@@ -131,7 +127,7 @@
 }
 
 .sprite .movetypes .m-movetype {
-  margin-left: 20rpx;
+  margin-left: 50rpx;
 }
 
 .sprite .power {
