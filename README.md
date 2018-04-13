@@ -7,6 +7,7 @@
 * 支持按中文名、编号搜索宝可梦
 * 支持按属性、世代、蛋组筛选宝可梦
 * 清晰直观的种族值、进化信息、弱点与抗性查询
+* 新增675种招式展示，并提供搜索筛选功能
 
 ### 微信扫码
 ![pokedex](https://media.ifanrusercontent.com/media/user_files/trochili/78/c8/78c83533c3d03678e2fdf5bb88a52470ffaca82c-1000f5d6ce9f124103c0c188cc2121fefd5556f6.jpg)
