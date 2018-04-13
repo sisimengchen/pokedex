@@ -29,6 +29,7 @@ Page({
     item.tms = [];
     item.inherits = [];
     item.others = [];
+    return;
     for (let i = 0; i < item.levelSprites.length; i++) {
       let id = item.levelSprites[i];
       let sprite = app.globalObject.getItemById(id);

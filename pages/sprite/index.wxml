@@ -17,7 +17,7 @@
       <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
     </view>
   </view>
-   <view class="moveInfo ctn" bindtap="tapMove" data-id="{{sprite.id}}">
+  <!-- <view class="moveInfo ctn" bindtap="tapMove" data-id="{{sprite.id}}">
     <text>招式列表</text>
     <view class="m-chevron">
       <image class="chevron" src="/img/chevron.png"></image>
@@ -27,7 +27,7 @@
       <image class="m-movetype" src="/img/icon_move_special.png"></image>
       <image class="m-movetype" src="/img/icon_move_status.png"></image>
     </view>
-  </view> 
+  </view> -->
   <text class="ctntitle">基本信息</text>
   <view class="baseInfo ctn">
     <view class="item">
