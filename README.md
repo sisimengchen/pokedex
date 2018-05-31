@@ -1,4 +1,4 @@
-## 简单好用的中文版Pokedex
+## 简单好用的小程序版Pokedex
 
 ### pokedex有哪些功能？
 
