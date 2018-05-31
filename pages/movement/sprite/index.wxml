@@ -18,7 +18,7 @@
       </view>
     </view>
   </view>
-  <view class="m-sprite" data-id="{{sprite.id}}">
+  <view class="m-sprite m-bottomsprite" data-id="{{sprite.id}}">
     <image class="m-avatar" src="/img/sprites/{{sprite.id }}.png"></image>
     <text class="name">{{sprite.cname}}</text>
     <view class="types">

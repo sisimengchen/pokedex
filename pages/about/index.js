@@ -4,6 +4,14 @@ Page({
   data: {
     updateList: [
       {
+        version: '2.1',
+        date: '2018.06.01',
+        updateItems: [
+          '更正了颠倒、输电、怪异电波的属性信息错误；',
+          '新增第七世代宝可梦的招式数据；'
+        ]
+      },
+      {
         version: '2.0',
         date: '2018.04.14',
         updateItems: [

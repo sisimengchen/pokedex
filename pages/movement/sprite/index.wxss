@@ -21,6 +21,8 @@
   margin-right: 18rpx;
   color: #888;
   font-size: 26rpx;
+  min-width: 78rpx;
+  display: inline-block;
 }
 
 .m-contents .m-content .item .name {
@@ -36,7 +38,7 @@
 }
 
 .m-contents .m-content .item .types .m-type {
-  margin-left: 20rpx;
+  margin-left: 30rpx;
 }
 
 .m-contents .m-content .item .movetypes {
@@ -44,7 +46,7 @@
 }
 
 .m-contents .m-content .item .movetypes .m-movetype {
-  margin-left: 20rpx;
+  margin-left: 50rpx;
 }
 
 .m-contents .m-content .item .power {

@@ -56,6 +56,7 @@ page {
 .m-contents .m-content:last-child {
   border-bottom: 0;
 }
+
 .m-contents .active {
   display: block;
 }
@@ -72,6 +73,14 @@ page {
   color: #888;
   padding: 0 30rpx;
   background-color: #fff;
+}
+
+.m-bottomsprite {
+  color: #353535;
+}
+
+.m-bottomsprite .name {
+  margin-left: 20rpx;
 }
 
 .m-sprite .types {
@@ -104,7 +113,7 @@ page {
 /* 精灵头像 */
 
 .m-avatar {
-   display: inline-block;
+  display: inline-block;
   vertical-align: middle;
   height: 40px;
   width: 40px;

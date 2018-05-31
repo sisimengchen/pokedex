@@ -19,10 +19,11 @@ Page({
     var tabs = [];
     var item = app.globalObject.getItemById(options.id);
     var levelMoves = item.levelMoves;
-    var levelMovesVal = item.levelMovesVal;
-    var tmMoves = item.tmMoves;
-    var inheritMoves = item.inheritMoves;
-    var ohterMoves = item.ohterMoves;
+    var levelMovesVal = item.levelMovesVal || [];
+    var tmMoves = item.tmMoves || [];
+    var tmMovesVal = item.tmMovesVal || [];
+    var inheritMoves = item.inheritMoves || [];
+    var otherMoves = item.otherMoves || [];
     var leveltab = {
       id: 'level',
       name: '升级',
@@ -31,7 +32,7 @@ Page({
     };
     for (let i = 0; i < levelMoves.length; i++) {
       var move = app.globalObject.getMoveById(levelMoves[i]);
-      var txt = 'Lv.' + levelMovesVal[i];
+      var txt = parseInt(levelMovesVal[i]) ? 'Lv.' + levelMovesVal[i] : levelMovesVal[i];
       if (move.type)
         leveltab.items.push({
           className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
@@ -47,10 +48,11 @@ Page({
     };
     for (let i = 0; i < tmMoves.length; i++) {
       var move = app.globalObject.getMoveById(tmMoves[i]);
+      var txt = 'TM.' + tmMovesVal[i];
       tmtab.items.push({
         className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
         move: move,
-        txt: 'TM.01'
+        txt: txt
       })
     }
     tmMoves.length ? tabs.push(tmtab) : '';
@@ -69,17 +71,17 @@ Page({
     inheritMoves.length ? tabs.push(inherittab) : '';
     var othertab = {
       id: 'other',
-      name: '其他',
+      name: '教授',
       items: []
     };
-    for (let i = 0; i < ohterMoves.length; i++) {
-      var move = app.globalObject.getMoveById(ohterMoves[i]);
+    for (let i = 0; i < otherMoves.length; i++) {
+      var move = app.globalObject.getMoveById(otherMoves[i]);
       othertab.items.push({
         className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
         move: move
       })
     }
-    ohterMoves.length ? tabs.push(othertab) : '';
+    otherMoves.length ? tabs.push(othertab) : '';
     var currentId = 0;
     this.setData({
       sprite: item,
