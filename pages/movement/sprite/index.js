@@ -35,7 +35,7 @@ Page({
       var txt = parseInt(levelMovesVal[i]) ? 'Lv.' + levelMovesVal[i] : levelMovesVal[i];
       if (move.type)
         leveltab.items.push({
-          className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
+          className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'dark' : '',
           move: move,
           txt: txt
         })
@@ -50,7 +50,7 @@ Page({
       var move = app.globalObject.getMoveById(tmMoves[i]);
       var txt = 'TM.' + tmMovesVal[i];
       tmtab.items.push({
-        className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
+        className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'dark' : '',
         move: move,
         txt: txt
       })
@@ -64,7 +64,7 @@ Page({
     for (let i = 0; i < inheritMoves.length; i++) {
       var move = app.globalObject.getMoveById(inheritMoves[i]);
       inherittab.items.push({
-        className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
+        className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'dark' : '',
         move: move
       })
     }
@@ -77,7 +77,7 @@ Page({
     for (let i = 0; i < otherMoves.length; i++) {
       var move = app.globalObject.getMoveById(otherMoves[i]);
       othertab.items.push({
-        className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'red' : '',
+        className: (item.type.indexOf(move.type) > -1) && move.movetype != 'status' ? 'dark' : '',
         move: move
       })
     }

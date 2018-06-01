@@ -5,16 +5,18 @@
   </view>
   <view class="m-contents">
     <view wx:for-item="tabItem" class="m-content{{tabItem.isActive?' active':''}}" data-id="{{tabItem.id}}" wx:for="{{tabs}}" wx:for-index="index" wx:key="unique">
-      <view class="item {{item.className}}" wx:for="{{tabItem.items}}" wx:for-index="name" wx:key="unique" data-id="{{item.move.id}}" catchtap="tapMove">
-        <text class="text" wx:if="{{item.txt}}">{{item.txt}}</text>
-        <text class="name">{{item.move.cname}}</text>
-        <view class="types">
-          <text class="m-type {{item.move.type}}">{{item.move.ctype}}</text>
+      <view class="{{item.className}}" wx:for="{{tabItem.items}}" wx:for-index="name" wx:key="unique" data-id="{{item.move.id}}" catchtap="tapMove">
+        <view class="item">
+          <text class="text" wx:if="{{item.txt}}">{{item.txt}}</text>
+          <text class="name">{{item.move.cname}}</text>
+          <view class="types">
+            <text class="m-type {{item.move.type}}">{{item.move.ctype}}</text>
+          </view>
+          <view class="movetypes">
+            <image class="m-movetype" src="/img/icon_move_{{item.move.movetype}}.png"></image>
+          </view>
+          <text class="power">{{item.move.power}}</text>
         </view>
-        <view class="movetypes">
-          <image class="m-movetype" src="/img/icon_move_{{item.move.movetype}}.png"></image>
-        </view>
-        <text class="power">{{item.move.power}}</text>
       </view>
     </view>
   </view>

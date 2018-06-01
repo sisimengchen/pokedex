@@ -33,6 +33,10 @@
   color: #dc4343;
 }
 
+.m-contents .m-content .dark {
+  background-color: #f2f2f2;
+}
+
 .m-contents .m-content .item .types {
   float: right;
 }
