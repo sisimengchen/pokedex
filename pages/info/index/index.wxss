@@ -32,3 +32,13 @@
   height: 26rpx;
   vertical-align: middle;
 }
+
+.m-info .tag {
+  font-size: 20rpx;
+  color: #fff;
+  background-color: #dc4343;
+  vertical-align: middle;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  margin-left: 10rpx;
+}

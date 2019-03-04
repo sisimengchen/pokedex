@@ -15,6 +15,7 @@
   box-sizing: border-box;
   /* padding: 0 20rpx; */
   text-align: justify;
+  font-weight: lighter;
 }
 
 .m-contents .m-content .item .text {
@@ -31,10 +32,18 @@
 
 .m-contents .m-content .red .name {
   color: #dc4343;
+  font-weight: normal;
 }
 
-.m-contents .m-content .emphasize {
-  background-color: #f2f2f2;
+.m-contents .m-content .emphasize .name {
+  color: #000;
+  font-weight: normal;
+  /* background-color: #f2f2f2; */
+}
+
+.m-contents .m-content .emphasize .power {
+  color: #000;
+  /* background-color: #f2f2f2; */
 }
 
 .m-contents .m-content .item .types {

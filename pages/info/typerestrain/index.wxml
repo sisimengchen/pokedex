@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="m-tabs" catchtap="tapTabs">
+    <text class="m-tab{{item.isActive?' active':''}}" wx:for="{{tabs}}" wx:for-index="index" wx:key="unique" data-id="{{index}}">{{item.name}}</text>
+  </view>
+  <view class="m-contents">
+    <view wx:for-item="tabItem" wx:for="{{tabs}}" class="m-content{{tabItem.isActive?' active':''}}" wx:for-index="index" wx:key="unique">
+      <view wx:for-item="typess" wx:for="{{tabItem.items}}" wx:for-index="index" wx:key="unique" class="item">
+        <view wx:if="{{index===0}}" wx:for-item="types" wx:for="{{typess}}" wx:for-index="index" wx:key="unique">
+          <text class="m-type {{type.ename}}" wx:for-item="type" wx:for="{{types}}" wx:for-index="index" wx:key="unique">{{type.cname}}</text>
+        </view>
+        <view class="m-base m-base{{tabItem.base}}">
+          <text>{{tabItem.base}}×</text>
+        </view>
+        <view wx:if="{{index===1}}" wx:for-item="types" wx:for="{{typess}}" wx:for-index="index" wx:key="unique">
+          <text class="m-type {{type.ename}}" wx:for-item="type" wx:for="{{types}}" wx:for-index="index" wx:key="unique">{{type.cname}}</text>
+        </view>
+        <view class="m-base m-base{{tabItem.base}}">
+          <text>{{tabItem.base}}×</text>
+        </view>
+        <view wx:if="{{index===2}}" wx:for-item="types" wx:for="{{typess}}" wx:for-index="index" wx:key="unique">
+          <text class="m-type {{type.ename}}" wx:for-item="type" wx:for="{{types}}" wx:for-index="index" wx:key="unique">{{type.cname}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

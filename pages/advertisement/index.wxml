@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="m-info">
-    <image src="{{ad.qrcode}}"></image>
-    <text class="title">{{ad.title}}</text>
-    <text class="desc">{{ad.desc}}</text>
-    <text class="desc">（注意：长按识别不了，截屏吧朋友）</text>
-  </view>
-</view>

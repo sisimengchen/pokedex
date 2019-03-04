@@ -31,6 +31,7 @@ Page({
   },
   tapTabs: function (event) {
     var index = event.target.dataset.id;
+    if (index == undefined) return 
     var currentId = this.data.currentId;
     if (currentId === index) {
       return;
@@ -102,7 +103,7 @@ Page({
         }
       }
     }
-    console.log(query);
+    // console.log(query);
     if (isFilter) {
       wx.navigateTo({
         url: '/pages/movement/filterout/index?isFilter=' + isFilter + '&filter=' + JSON.stringify(query)

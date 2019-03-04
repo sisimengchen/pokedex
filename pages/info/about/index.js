@@ -1,8 +1,15 @@
 //index.js
-var util = require('../../utils/util.js')
 Page({
   data: {
     updateList: [
+      {
+        version: '2.2',
+        date: '2018.08.20',
+        updateItems: [
+          '优化了一些UI细节；',
+          '新增第一、二世代宝可梦的招式数据。'
+        ]
+      },
       {
         version: '2.1',
         date: '2018.06.02',

@@ -3,22 +3,22 @@
     "pages/index/index",
     "pages/search/index",
     "pages/sprite/index",
-    "pages/about/index",
     "pages/filter/index",
     "pages/filterout/index",
     "pages/resist/index",
     "pages/abilitydetail/index",
-    "pages/logs/logs",
-    "pages/info/index",
-    "pages/character/index",
-    "pages/copycat/index",
     "pages/movement/index/index",
     "pages/movement/detail/index",
     "pages/movement/filter/index",
     "pages/movement/filterout/index",
     "pages/movement/search/index",
     "pages/movement/sprite/index",
-    "pages/feedback/index"
+    "pages/info/index/index",
+    "pages/info/character/index",
+    "pages/info/about/index",
+    "pages/info/copycat/index",
+    "pages/info/feedback/index",
+    "pages/info/typerestrain/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -46,7 +46,7 @@
         "selectedIconPath": "/img/icon_tabbar_moves_selected.png"
       },
       {
-        "pagePath": "pages/info/index",
+        "pagePath": "pages/info/index/index",
         "text": "信息",
         "iconPath": "/img/icon_tabbar_info_normal.png",
         "selectedIconPath": "/img/icon_tabbar_info_selected.png"

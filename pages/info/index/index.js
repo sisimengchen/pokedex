@@ -1,5 +1,5 @@
 // index.js
-import adList from '../../data/adlist.js';
+import adList from '../../../data/adlist.js';
 //获取应用实例
 const app = getApp();
 Page({
@@ -11,6 +11,11 @@ Page({
       {
         title: '性格修正表',
         link: 'character'
+      },
+      {
+        title: '属性克制表',
+        link: 'typerestrain',
+        tag: 'NEW'
       }
     ],
     infoList: [
@@ -40,7 +45,7 @@ Page({
     var index = event.currentTarget.dataset.index;
     if (link) {
       wx.navigateTo({
-        url: '/pages/' + link + '/index'
+        url: '/pages/info/' + link + '/index'
       });
     } else if (parseInt(index) >= 0) {
       wx.navigateTo({

@@ -1,0 +1,34 @@
+/* index.wxss */
+
+.m-contents .m-content .item {
+  display: flex;
+  margin: 0 30rpx;
+  /* height: 88rpx; *//* line-height: 88rpx; *//* font-size: 34rpx; */
+  color: #353535;
+  border-bottom: 1rpx solid #e5e5e5;
+  box-sizing: border-box;
+  padding: 21rpx 0rpx;
+  text-align: justify;
+}
+
+.m-contents .m-content .item view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-contents .m-content .item .m-base2 {
+  color: #DC4343;
+}
+
+.m-contents .m-content .item .m-base {
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.m-contents .m-content .item view .m-type {
+  margin-top: 21rpx;
+  margin-bottom: 21rpx;
+}
