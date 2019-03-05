@@ -17,7 +17,7 @@
   </view>
   <view class="m-sprite m-bottomsprite" data-id="{{sprite.id}}">
     <image class="m-avatar" src="/img/sprites/{{sprite.id }}.png"></image>
-    <text class="name">{{sprite.cname}}</text>
+    <text class="name">{{sprite.cname + (sprite.form || '')}}</text>
     <view class="types">
       <text class="m-type {{item}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-index="index">{{sprite.ctype[index]}}</text>
     </view>

@@ -26,10 +26,9 @@ Page({
   onLoad: function (options) {
     var item = app.globalObject.getItemById(options.id);
     wx.setNavigationBarTitle({
-      title: item.cname
+      title: item.cname + (item.form || '')
     });
     this.formate(item);
-    // console.log(item);
     this.setData({
       title: item.cname,
       sprite: item

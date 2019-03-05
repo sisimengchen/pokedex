@@ -1,5 +1,9 @@
 /* pages/movement/sprite/index.wxss */
 
+.m-contents {
+  margin-top: 100rpx;
+}
+
 .m-tabs .m-tab {
   margin: 0 20rpx;
 }
@@ -15,7 +19,6 @@
   box-sizing: border-box;
   /* padding: 0 20rpx; */
   text-align: justify;
-  font-weight: lighter;
 }
 
 .m-contents .m-content .item .text {
