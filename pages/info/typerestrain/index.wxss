@@ -1,5 +1,9 @@
 /* index.wxss */
 
+.m-contents {
+  margin-top: 100rpx;
+}
+
 .m-contents .m-content .item {
   display: flex;
   margin: 0 30rpx;
@@ -29,6 +33,6 @@
 }
 
 .m-contents .m-content .item view .m-type {
-  margin-top: 21rpx;
-  margin-bottom: 21rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
 }

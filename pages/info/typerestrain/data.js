@@ -1,4 +1,6 @@
-module.exports = [{
+import type from '../../../data/type.js';
+
+const data = [{
   name: '弱点',
   isActive: true,
   base: 2,
@@ -205,7 +207,7 @@ module.exports = [{
     [
       ['normal', 'fighting'],
       ['ghost'],
-      ['flying']
+      ['normal']
     ],
     [
       ['dragon'],
@@ -225,3 +227,26 @@ module.exports = [{
   ]
 }
 ]
+
+const tabs = []
+for (var i = 0; i < data.length; i++) {
+  const tabdata = data[i].items
+  tabs[i] = data[i]
+  for (var j = 0; j < tabdata.length; j++) {
+    const row = tabdata[j]
+    tabs[i].items[j] = tabdata[j]
+    for (var k = 0; k < row.length; k++) {
+      const types = row[k]
+      tabs[i].items[j][k] = types;
+      for (var z = 0; z < types.length; z++) {
+        const t = types[z]
+        tabs[i].items[j][k][z] = {
+          cname: type.getCname(t),
+          ename: t
+        }
+      }
+    }
+  }
+}
+
+module.exports = tabs

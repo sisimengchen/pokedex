@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <button class="m-sharebtn" open-type="share"></button>
   <view class="m-sprite" bindtap="toResist" data-id="{{sprite.id}}">
     <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
     <view class="m-info">
@@ -17,7 +18,7 @@
       <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
     </view>
   </view>
-   <view wx:if="{{ sprite.levelMoves && sprite.levelMoves.length }}" class="moveInfo ctn" bindtap="tapMove" data-id="{{sprite.id}}">
+  <view wx:if="{{ sprite.levelMoves && sprite.levelMoves.length }}" class="moveInfo ctn" bindtap="tapMove" data-id="{{sprite.id}}">
     <text>招式列表</text>
     <view class="m-chevron">
       <image class="chevron" src="/img/chevron.png"></image>
@@ -27,7 +28,7 @@
       <image class="m-movetype" src="/img/icon_move_special.png"></image>
       <image class="m-movetype" src="/img/icon_move_status.png"></image>
     </view>
-  </view> 
+  </view>
   <text class="ctntitle">基本信息</text>
   <view class="baseInfo ctn">
     <view class="item">
