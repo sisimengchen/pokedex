@@ -42,9 +42,9 @@
   width: 100%;
   height: 100%;
   background-color: #fff;
-  font-size: 26rpx;
+  font-size: 24rpx;
   color: #b2b2b2;
-  border-radius: 10rpx;
+  border-radius: 8rpx;
   text-align: center;
 }
 
@@ -90,7 +90,7 @@
   margin: 0 30rpx;
   height: 88rpx;
   line-height: 88rpx;
-  font-size: 34rpx;
+  font-size: 32rpx;
   color: #353535;
   border-bottom: 1rpx solid #e5e5e5;
   box-sizing: border-box;
@@ -119,7 +119,7 @@
 .sprite .power {
   float: right;
   color: #353535;
-  font-size: 34rpx;
+  font-size: 32rpx;
 }
 
 .filter {

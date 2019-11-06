@@ -7,40 +7,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navList: [
-      {
+    navList: [{
         title: '性格修正表',
         link: 'character'
       },
       {
         title: '属性克制表',
         link: 'typerestrain',
-        tag: 'NEW'
+        tag: ''
       }
     ],
-    infoList: [
-      {
+    infoList: [{
         title: '关于宝可梦图鉴',
         link: 'about'
       },
       {
-        title: '山寨去死',
-        link: 'copycat'
+        title: '意见反馈',
+        link: 'feedback'
       }
     ],
-    nav2List: [{
-      title: '意见反馈',
-      link: 'feedback'
+    miniProgramList: [{
+      title: '一个没有感情的杀手',
+      appid: 'wx4f3c74df9e59d919',
+      tag: '手慢不要点'
     }]
   },
-  onShareAppMessage: function (e) {
-  },
-  onLoad: function (options) {
+  onShareAppMessage: function(e) {},
+  onLoad: function(options) {
     this.setData({
       adList: adList
     });
   },
-  goto: function (event) {
+  goto: function(event) {
     var link = event.currentTarget.dataset.link;
     var index = event.currentTarget.dataset.index;
     if (link) {
@@ -52,5 +50,13 @@ Page({
         url: '/pages/advertisement/index?index=' + index
       });
     }
+  },
+  gotoMiniProgram: function(event) {
+    var appid = event.currentTarget.dataset.appid;
+    var index = event.currentTarget.dataset.index;
+    console.log(appid)
+    wx.navigateToMiniProgram({
+      appId: appid
+    })
   }
 })

@@ -13,7 +13,7 @@
   margin: 0 30rpx;
   height: 88rpx;
   line-height: 88rpx;
-  font-size: 34rpx;
+  font-size: 32rpx;
   color: #353535;
   border-bottom: 1rpx solid #e5e5e5;
   box-sizing: border-box;
@@ -24,8 +24,8 @@
 .m-contents .m-content .item .text {
   margin-right: 18rpx;
   color: #888;
-  font-size: 26rpx;
-  min-width: 78rpx;
+  font-size: 24rpx;
+  min-width: 80rpx;
   display: inline-block;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .m-contents .m-content .item .types .m-type {
-  margin-left: 30rpx;
+  margin-left: 32rpx;
 }
 
 .m-contents .m-content .item .movetypes {
@@ -68,7 +68,7 @@
 .m-contents .m-content .item .power {
   float: right;
   color: #353535;
-  font-size: 34rpx;
+  font-size: 32rpx;
 }
 
 .m-contents .m-content .red .power {

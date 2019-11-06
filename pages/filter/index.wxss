@@ -6,10 +6,10 @@
 
 .m-contents .m-content .item {
   display: flex;
-  margin: 0 30rpx;
+  margin: 0 32rpx;
   height: 88rpx;
   line-height: 88rpx;
-  font-size: 34rpx;
+  font-size: 32rpx;
   color: #353535;
   border-bottom: 1rpx solid #e5e5e5;
   box-sizing: border-box;
@@ -56,14 +56,14 @@
 
 .buttons .btn {
   width: 320rpx;
-  height: 94rpx;
-  line-height: 94rpx;
+  height: 96rpx;
+  line-height: 96rpx;
   text-align: center;
   box-sizing: border-box;
   color: #000;
   font-size: 36rpx;
   background-color: #f8f8f8;
-  border-radius: 10rpx;
+  border-radius: 8rpx;
   border: 2rpx solid rgba(0, 0, 0, 0.1);
 }
 

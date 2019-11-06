@@ -1,9 +1,7 @@
 .infolist {
   width: 100%;
-  border-top: 1rpx solid #e5e5e5;
-  border-bottom: 1rpx solid #e5e5e5;
   background-color: #fff;
-  margin-top: 41rpx;
+  margin-top: 40rpx;
 }
 
 .m-info {
@@ -11,10 +9,10 @@
   display: block;
   height: 88rpx;
   line-height: 88rpx;
-  font-size: 34rpx;
+  font-size: 32rpx;
   color: #000;
-  margin-left: 30rpx;
-  padding-right: 30rpx;
+  margin-left: 32rpx;
+  padding-right: 32rpx;
   border-top: 1rpx solid #e5e5e5;
 }
 
@@ -38,7 +36,9 @@
   color: #fff;
   background-color: #dc4343;
   vertical-align: middle;
-  padding-left: 5rpx;
-  padding-right: 5rpx;
-  margin-left: 10rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  padding-top: 2rpx;
+  padding-bottom: 2rpx;
+  margin-left: 8rpx;
 }

@@ -3,6 +3,14 @@ Page({
   data: {
     updateList: [
       {
+        version: '2.4',
+        date: '2019.11.02',
+        updateItems: [
+          '优化了一些UI细节；',
+          '帮一位手速很快的朋友打个广告。'
+        ]
+      },
+      {
         version: '2.3',
         date: '2019.03.06',
         updateItems: [

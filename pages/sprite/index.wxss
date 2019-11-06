@@ -27,8 +27,6 @@
 
 .m-sprite {
   margin-top: 40rpx;
-  border-top: 1rpx solid #e5e5e5;
-  border-bottom: 1rpx solid #e5e5e5;
 }
 
 .m-sprite .m-avatar {
@@ -60,7 +58,7 @@
   width: 100%;
   font-size: 28rpx;
   text-align: left;
-  padding: 30rpx 30rpx 16rpx 30rpx;
+  padding: 32rpx 32rpx 16rpx 32rpx;
   box-sizing: border-box;
   color: #888;
 }
@@ -68,15 +66,13 @@
 .ctn {
   background-color: #fff;
   width: 100%;
-  border-top: 1rpx solid #e5e5e5;
-  border-bottom: 1rpx solid #e5e5e5;
-  font-size: 34rpx;
+  font-size: 32rpx;
   color: #353535;
 }
 
 .ctn .item {
   display: flex;
-  margin-left: 30rpx;
+  margin-left: 32rpx;
   /*padding: 20rpx 0;*/
   line-height: 88rpx;
   /* height: 88rpx; */
@@ -91,8 +87,8 @@
 }
 
 .ctn .bitem {
-  line-height: 120rpx;
-  /* height: 120rpx; */
+  line-height: 128rpx;
+  /* height: 128rpx; */
   padding-top: 20rpx;
   padding-bottom: 20rpx;
 }
@@ -112,15 +108,15 @@
 
 .moveInfo {
   box-sizing: border-box;
-  margin-top: 30rpx;
-  padding: 0 30rpx;
-  height: 88rpx;
-  line-height: 88rpx;
+  margin-top: 32rpx;
+  padding: 0 32rpx;
+  height: 96rpx;
+  line-height: 96rpx;
 }
 
 .moveInfo .movetypes {
   float: right;
-  line-height:88rpx;
+  line-height:96rpx;
 }
 
 .moveInfo .movetypes .m-movetype {
@@ -162,7 +158,7 @@
   box-sizing: border-box;
   width: 100%;
   padding-left: 0;
-  font-size: 26rpx;
+  font-size: 24rpx;
   line-height: 37rpx;
 }
 

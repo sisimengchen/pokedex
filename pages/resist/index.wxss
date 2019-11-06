@@ -6,10 +6,11 @@
 
 .m-contents .m-content .item {
   display: flex;
-  margin: 0 30rpx;
+  margin: 0 32rpx;
   height: 88rpx;
   line-height: 88rpx;
-  font-size: 34rpx;
+  font-size: 28rpx;
+  font-weight: bold;
   color: #353535;
   border-bottom: 1rpx solid #e5e5e5;
   box-sizing: border-box;

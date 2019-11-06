@@ -18,13 +18,13 @@
       </view>
     </view>
   </view>
-   <view class="infolist">
-    <view wx:for="{{nav2List}}" wx:for-item="nav2" wx:key="unique" class="m-info" wx:for-index="index" data-link="{{nav2.link}}" bindtap="goto">
-      <text>{{nav2.title}}</text>
-      <text wx:if="{{nav2.tag}}" class="tag">{{nav2.tag}}</text>
+  <view class="infolist">
+    <view wx:for="{{miniProgramList}}" wx:for-item="miniProgram" wx:key="unique" class="m-info" wx:for-index="index" data-appid="{{miniProgram.appid}}" bindtap="gotoMiniProgram">
+      <text>{{miniProgram.title}}</text>
+      <text wx:if="{{miniProgram.tag}}" class="tag">{{miniProgram.tag}}</text>
       <view class="m-chevron">
         <image class="chevron" src="/img/chevron.png"></image>
       </view>
     </view>
-  </view> 
+  </view>
 </view>
