@@ -1,5 +1,5 @@
-import spriteList from './sprites/spriteList.js';
-import moveList from './moves/moveList.js';
+import spriteList from './spriteList.js';
+import moveList from './moveList.js';
 import { save, read, remove } from '../utils/localStorage.js'
 
 var globalObject = {
