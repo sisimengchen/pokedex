@@ -1,28 +1,14 @@
 /**index.wxss**/
-
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page {
+  background-color: #fff;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.container {
+  display: block;
+  background-color: #fff;
 }
 
 .top {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 16rpx;
@@ -83,13 +69,7 @@
 }
 
 .spriteList {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 0;
+  position: relative;
 }
 .stand {
   height: 96rpx;
@@ -119,7 +99,7 @@
 
 .filter {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 60rpx;
   left: 50%;
   transform: translateX(-50%);

@@ -1,6 +1,5 @@
 // index.js
 import type from '../../data/type.js';
-// import area from '../../data/area.js';
 import generation from '../../data/generation.js';
 import eggGroup from '../../data/egggroup.js';
 Page({

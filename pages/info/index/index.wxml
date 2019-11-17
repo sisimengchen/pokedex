@@ -18,6 +18,17 @@
       </view>
     </view>
   </view>
+
+  <view class="infolist">
+    <view class="m-info" data-link="{{info.link}}" bindtap="goto">
+      <text>宝可梦倒序排列</text>
+      <text class="tag">NEW</text>
+      <view class="m-switch">
+      <switch color="#dc4343" checked="{{GLOBAL_SPRITE_REVERSE}}" bindchange="switchChange" />
+      </view>
+    </view>
+  </view>
+
   <view class="infolist">
     <view wx:for="{{miniProgramList}}" wx:for-item="miniProgram" wx:key="unique" class="m-info" wx:for-index="index" data-appid="{{miniProgram.appid}}" bindtap="gotoMiniProgram">
       <text>{{miniProgram.title}}</text>

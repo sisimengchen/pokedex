@@ -1,8 +1,10 @@
 import spriteList from './sprites/spriteList.js';
 import moveList from './moves/moveList.js';
+import { save, read, remove } from '../utils/localStorage.js'
+
 var globalObject = {
   // 精灵列表
-  spriteList: spriteList,
+  spriteList: read('GLOBAL_SPRITE_REVERSE') ? spriteList.reverse() : spriteList,
   // id查询精灵
   getItemById: function (id) {
     for (var i = 0, size = this.spriteList.length; i < size; i++) {
@@ -11,6 +13,47 @@ var globalObject = {
         return item;
       }
     }
+  },
+  isReversed: read('GLOBAL_SPRITE_REVERSE') ? true : false,
+  reverseSprite: function (value) {
+    debugger
+    if (this.isReversed == !!value) {
+      return
+    } else {
+      this.isReversed = !!value;
+      if (this.isReversed) {
+        save('GLOBAL_SPRITE_REVERSE', 1)
+      } else {
+        remove('GLOBAL_SPRITE_REVERSE')
+      }
+      this.spriteList = this.spriteList.reverse()
+    }
+  },
+  // id获取世代
+  getGgenerationById: function (id) {
+    id = parseInt(id, 10);
+    if (id < 152) {
+      return 1;
+    }
+    if (id < 252) {
+      return 2;
+    }
+    if (id < 387) {
+      return 3;
+    }
+    if (id < 494) {
+      return 4;
+    }
+    if (id < 650) {
+      return 5;
+    }
+    if (id < 722) {
+      return 6;
+    }
+    if (id < 808) {
+      return 7;
+    }
+    return 8;
   },
   // 通过精灵特征查询精灵列表
   getItemsByAbility: function (ability) {
@@ -155,7 +198,7 @@ var globalObject = {
       var sprite = this.spriteList[i];
       var area = sprite.area;
       var type = sprite.type;
-      var generation = sprite.generation;
+      var generation = sprite.generation || this.getGgenerationById(sprite.id);
       var eggGroup = sprite.eggGroup;
       var isAreaOk = qarea && qarea.length ? false : true;
       var isTypeOk = qtype && qtype.length ? false : true;

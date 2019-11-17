@@ -20,6 +20,11 @@
   border-top: 0rpx;
 }
 
+.m-info .m-switch {
+  float: right;
+  margin-right: -10rpx;
+}
+
 .m-info .m-chevron {
   float: right;
   margin-left: 30rpx;

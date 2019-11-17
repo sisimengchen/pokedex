@@ -2,17 +2,17 @@
 //获取应用实例
 const app = getApp();
 Page({
+  pageNo: 1,
+  pageSize: 50,
+  filterList: [],
   data: {
     searchStr: '',
     isFilter: '',
     filter: '',
     moveList: [],
-    pageNo: 0,
-    pageSize: 50,
-    maxPageNo: 15
+    status: 'more'
   },
   onLoad: function (options) {
-    this.isLoading = true;
     wx.showLoading({
       mask: true,
       title: '数据加载中'
@@ -20,59 +20,63 @@ Page({
     if (options.isFilter && options.filter) {
       // 筛选后的列表
       this.filterList = app.globalObject.filterMove(JSON.parse(options.filter));
-      var last = this.data.pageNo * this.data.pageSize + this.data.pageSize - 1;
       this.setData({
-        moveList: this.filterList.slice(0, last),
         isFilter: options.isFilter,
-        filter: options.filter,
-        maxPageNo: Math.ceil(this.filterList.length / this.data.pageSize)
+        filter: options.filter
+      }, () => {
+        this.getRecords()
       });
     } else {
       this.filterList = app.globalObject.moveList;
-      var last = this.data.pageNo * this.data.pageSize + this.data.pageSize - 1;
       // 未筛选的列表
       this.setData({
-        moveList: this.filterList.slice(0, last),
         isFilter: '',
-        filter: '',
-        maxPageNo: Math.ceil(this.filterList.length / this.data.pageSize)
+        filter: ''
+      }, () => {
+        this.getRecords()
       });
     }
   },
   onReady: function () {
     wx.hideLoading();
-    this.isLoading = false;
-    this.windowHeight = wx.getSystemInfoSync().windowHeight;
-    this.scrollList = [];
   },
-  onScroll: function (e) {
-    if (this.data.pageNo >= this.data.maxPageNo) return;
-    if (this.isLoading) return;
-    var detail = e.detail;
-    if (!this.scrollHeight) { // 首次
-      this.scrollHeight = detail.scrollHeight;
-    } else if (this.scrollHeight != detail.scrollHeight) { // 加载了新的
-      this.scrollHeight = detail.scrollHeight;
-    } else { // 还在原来的里面滚
-      if (this.scrollList.indexOf(detail.scrollHeight) === -1 && detail.scrollHeight - detail.scrollTop - this.windowHeight < 500) {
-        this.scrollList.push(detail.scrollHeight);
-        console.log('go');
-        this.isLoading = true;
-        wx.showLoading({
-          mask: true,
-          title: '数据加载中'
-        });
-        this.data.pageNo++;
-        var last = this.data.pageNo * this.data.pageSize + this.data.pageSize - 1;
-        this.setData({
-          moveList: this.filterList.slice(0, last)
-        });
-        var me = this;
-        setTimeout(function () {
-          wx.hideLoading();
-          me.isLoading = false;
-        }, 1000);
-      }
+  onReachBottom: function (e) {
+    const {
+      status
+    } = this.data
+    if (status == 'loading' || status == 'noMore') return;
+    this.getRecords();
+  },
+  getRecords: function () {
+    const {
+      status
+    } = this.data
+    if (status == 'loading' || status == 'noMore') return;
+    const endIndex = this.pageNo * this.pageSize;
+    const moveList = this.filterList.slice(0, endIndex);
+    wx.showLoading({
+      mask: true,
+      title: '数据加载中'
+    });
+    this.setData({
+      moveList,
+      status: 'loading'
+    }, () => {
+      setTimeout(() => {
+        wx.hideLoading();
+        if (this.data.status == 'loading') {
+          this.setData({
+            status: 'more'
+          })
+        }
+      }, 500);
+    })
+    if (endIndex >= this.filterList.length) {
+      this.setData({
+        status: 'noMore'
+      })
+    } else {
+      this.pageNo++;
     }
   },
   tapSprite: function (event) {

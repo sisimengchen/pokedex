@@ -42,6 +42,9 @@ Page({
     item.carea = [];
     item.ceggGroup = [];
     item.cevolutions = [];
+    if (!item.generation) {
+      item.generation = app.globalObject.getGgenerationById(item.id)
+    }
     // 类型
     for (let i = 0, l = item.type.length; i < l; i++) {
       item.ctype.push(type.getCname(item.type[i]));

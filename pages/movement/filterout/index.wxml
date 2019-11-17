@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <scroll-view scroll-y="true" scroll-top="0" bindscroll="onScroll" wx:if="moveList" class="spriteList">
+  <view wx:if="moveList" class="spriteList">
     <view wx:for="{{moveList}}" class="sprite" wx:for-item="move" wx:key="unique" data-id="{{move.id}}" data-index="{{move.index}}" bindtap="tapSprite">
       <text class="name">{{move.cname}}</text>
       <view class="types">
@@ -11,7 +11,7 @@
       </view>
       <text class="power">{{move.power}}</text>
     </view>
-  </scroll-view>
+  </view>
   <image class="filter" wx:if="{{isFilter}}" bindtap="tapFilter" src="/img/filterover.png"></image>
   <image class="filter" wx:else bindtap="tapFilter" src="/img/filter.png"></image>
 </view>

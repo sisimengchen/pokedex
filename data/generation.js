@@ -10,7 +10,8 @@ var generation = {
         { id: '4', value: '四代' },
         { id: '5', value: '五代' },
         { id: '6', value: '六代' },
-        { id: '7', value: '七代' }
+        { id: '7', value: '七代' },
+        { id: '8', value: '八代' }
       ]
     };
     if (selectList && selectList.length) {

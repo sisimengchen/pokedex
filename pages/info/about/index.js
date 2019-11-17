@@ -3,6 +3,14 @@ Page({
   data: {
     updateList: [
       {
+        version: '2.5',
+        date: '2019.11.18',
+        updateItems: [
+          '***；',
+          '***。'
+        ]
+      },
+      {
         version: '2.4',
         date: '2019.11.02',
         updateItems: [
