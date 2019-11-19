@@ -1,5 +1,5 @@
-import spriteList from './spriteList.js';
-import moveList from './moveList.js';
+import spriteList from './pokemons/pokemons.js';
+import moveList from './moves/moves.js';
 import { save, read, remove } from '../utils/localStorage.js'
 
 var globalObject = {
@@ -16,7 +16,6 @@ var globalObject = {
   },
   isReversed: read('GLOBAL_SPRITE_REVERSE') ? true : false,
   reverseSprite: function (value) {
-    debugger
     if (this.isReversed == !!value) {
       return
     } else {
@@ -50,7 +49,7 @@ var globalObject = {
     if (id < 722) {
       return 6;
     }
-    if (id < 808) {
+    if (id < 810) {
       return 7;
     }
     return 8;

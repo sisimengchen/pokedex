@@ -17,7 +17,9 @@
     "pages/info/character/index",
     "pages/info/about/index",
     "pages/info/feedback/index",
-    "pages/info/typerestrain/index"
+    "pages/info/typerestrain/index",
+    "pages/calendar/index/index",
+    "pages/calendar/introduce/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -49,6 +51,12 @@
         "text": "信息",
         "iconPath": "/img/icon_tabbar_info_normal.png",
         "selectedIconPath": "/img/icon_tabbar_info_selected.png"
+      },
+      {
+        "pagePath": "pages/calendar/index/index",
+        "text": "老黄历",
+        "iconPath": "/img/icon_tabbar_calendar_normal.png",
+        "selectedIconPath": "/img/icon_tabbar_calendar_selected.png"
       }
     ]
   },
