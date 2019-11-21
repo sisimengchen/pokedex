@@ -21,12 +21,6 @@ Page({
     });
   },
   tapSprite: function (event) {
-    // var index = event.currentTarget.dataset.index + '';
-    // if (index) {
-    //   wx.navigateTo({
-    //     url: '/pages/sprite/index?index=' + index
-    //   });
-    // }
     var id = event.currentTarget.dataset.id;
     if (id) {
       wx.navigateTo({

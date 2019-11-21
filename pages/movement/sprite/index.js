@@ -105,7 +105,6 @@ Page({
     }
   },
   tapMove: function (event) {
-    // console.log(event);
     var id = event.currentTarget.dataset.id;
     if (id) {
       wx.navigateTo({

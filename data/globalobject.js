@@ -92,7 +92,6 @@ var globalObject = {
           happiness: step3[happinesskey],
           exchange: step3[exchangekey],
           other: step3[otherkey],
-          index: sprite.index,
           name: sprite.name,
           cname: sprite.cname,
           className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty',
@@ -118,7 +117,6 @@ var globalObject = {
           happiness: step2[happinesskey],
           exchange: step2[exchangekey],
           other: step2[otherkey],
-          index: sprite.index,
           name: sprite.name,
           cname: sprite.cname,
           className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty',
@@ -144,7 +142,6 @@ var globalObject = {
           happiness: step1[happinesskey],
           exchange: step1[exchangekey],
           other: step1[otherkey],
-          index: sprite.index,
           name: sprite.name,
           cname: sprite.cname,
           className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty'

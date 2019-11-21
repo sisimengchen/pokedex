@@ -1,7 +1,5 @@
 // index.js
 import type from '../../../data/type.js';
-// import area from '../../../data/area.js';
-// import generation from '../../../data/generation.js';
 import movetype from '../../../data/movetype.js';
 Page({
   data: {
@@ -14,13 +12,9 @@ Page({
     if (options.isFilter && options.filter) {
       var filterObject = JSON.parse(options.filter);
       tabs.push(type.getType(filterObject.type));
-      // tabs.push(area.getArea(filterObject.area));
-      // tabs.push(generation.getGeneration(filterObject.generation));
       tabs.push(movetype.getMoveType(filterObject.movetype));
     } else {
       tabs.push(type.getType());
-      // tabs.push(area.getArea());
-      // tabs.push(generation.getGeneration());
       tabs.push(movetype.getMoveType());
     }
     tabs[currentId].isActive = true;
@@ -103,7 +97,6 @@ Page({
         }
       }
     }
-    // console.log(query);
     if (isFilter) {
       wx.navigateTo({
         url: '/pages/movement/filterout/index?isFilter=' + isFilter + '&filter=' + JSON.stringify(query)

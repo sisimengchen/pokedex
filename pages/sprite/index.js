@@ -91,34 +91,27 @@ Page({
       }
       item.abilityList.push(abobj);
     }
-    this.getEvolutions(item, item.evolutions);
+    this.getEvolutions(item, item.evolutions || []);
   },
   toResist: function (event) {
-    // console.log(event);
     var id = event.currentTarget.dataset.id;
     if (id) {
       wx.navigateTo({
-        url: '../resist/index' + '?id=' + id
+        url: '/pages/resist/index' + '?id=' + id
       });
     }
   },
   toAbilityDetail: function (event) {
-    // console.log(event);
     var id = event.currentTarget.dataset.id;
     if (id) {
       wx.navigateTo({
-        url: '../abilitydetail/index' + '?id=' + id
+        url: '/pages/abilitydetail/index' + '?id=' + id
       });
     }
   },
   tapMove: function (event) {
-    // console.log(event);
     var id = event.currentTarget.dataset.id;
     if (id) {
-      // wx.showToast({
-      //   mask: true,
-      //   title: '功能开发中'
-      // });
       wx.navigateTo({
         url: '/pages/movement/sprite/index' + '?id=' + id
       });
@@ -140,7 +133,7 @@ Page({
       step2List = [],
       step3List = [];
     if (step3) {
-      for (var i = 0; i <= 7; i++) {
+      for (let i = 0; i <= 7; i++) {
         var idkey = 'id' + (i ? i : '');
         var idvalue = step3[idkey];
         var levelkey = 'level' + (i ? i : '');
@@ -156,7 +149,6 @@ Page({
           happiness: step3[happinesskey],
           exchange: step3[exchangekey],
           other: step3[otherkey],
-          index: sprite.index,
           name: sprite.name,
           cname: sprite.cname,
           className: idvalue ? (idvalue == item.id ? 'current' : '') : 'empty',
@@ -166,7 +158,7 @@ Page({
       }
     }
     if (step2) {
-      for (var i = 0; i <= 7; i++) {
+      for (let i = 0; i <= 7; i++) {
         var idkey = 'id' + (i ? i : '');
         var idvalue = step2[idkey]
         var levelkey = 'level' + (i ? i : '');
@@ -182,7 +174,6 @@ Page({
           happiness: step2[happinesskey],
           exchange: step2[exchangekey],
           other: step2[otherkey],
-          index: sprite.index,
           name: sprite.name,
           cname: sprite.cname,
           className: idvalue ? (idvalue == item.id ? 'current' : '') : 'empty',
@@ -192,7 +183,7 @@ Page({
       }
     }
     if (step1) {
-      for (var i = 0; i <= 7; i++) {
+      for (let i = 0; i <= 7; i++) {
         var idkey = 'id' + (i ? i : '');
         var idvalue = step1[idkey]
         var levelkey = 'level' + (i ? i : '');
@@ -208,7 +199,6 @@ Page({
           happiness: step1[happinesskey],
           exchange: step1[exchangekey],
           other: step1[otherkey],
-          index: sprite.index,
           name: sprite.name,
           cname: sprite.cname,
           className: idvalue ? (idvalue == item.id ? 'current' : '') : 'empty'
@@ -229,6 +219,5 @@ Page({
         item.evolutmax.push(list);
       }
     }
-    // console.log(item);
   }
 })

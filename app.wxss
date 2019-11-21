@@ -31,11 +31,20 @@ page {
   text-align: center;
   box-sizing: border-box;
   padding: 27rpx 0;
-  margin: 0 40rpx;
+  position: relative;
 }
 
 .m-tabs .active {
   color: #dc4343;
+}
+
+.m-tabs .active ::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 72%;
+  transform: translateX(-50%);
   border-bottom: 6rpx solid #dc4343;
 }
 
@@ -79,7 +88,7 @@ page {
   box-shadow: none;
 }
 
-.m-sharebtn::after{
+.m-sharebtn::after {
   border: none;
 }
 
