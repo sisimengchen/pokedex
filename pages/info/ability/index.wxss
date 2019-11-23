@@ -3,7 +3,6 @@
 page {
   background-color: #fff;
 }
-
 .container {
   display: block;
   background-color: #fff;
@@ -20,8 +19,8 @@ page {
 }
 
 .searchctn {
-  float: left;
-  width: 90%;
+  /* float: left; */
+  /* width: 100%; */
   height: 56rpx;
   line-height: 56rpx;
   position: relative;
@@ -83,7 +82,11 @@ page {
 
 .sprite {
   display: block;
-  margin: 0 32rpx;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 32rpx;
+  margin-right: 0;
+  /* margin: 0 32rpx; */
   height: 88rpx;
   line-height: 88rpx;
   font-size: 32rpx;
@@ -93,7 +96,7 @@ page {
 }
 
 .sprite .name {
-  /* margin-left: 20rpx; */
+  margin-left: 20rpx;
 }
 
 .sprite .types {
@@ -101,21 +104,7 @@ page {
 }
 
 .sprite .types .m-type {
-  margin-left: 30rpx;
-}
-
-.sprite .movetypes {
-  float: right;
-}
-
-.sprite .movetypes .m-movetype {
-  margin-left: 50rpx;
-}
-
-.sprite .power {
-  float: right;
-  color: #353535;
-  font-size: 34rpx;
+  margin-left: 20rpx;
 }
 
 .filter {

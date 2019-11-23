@@ -1,6 +1,6 @@
 // index.js
 import type from '../../data/type.js';
-import area from '../../data/area.js';
+// import area from '../../data/area.js';
 import ability from '../../data/ability.js';
 import egggroup from '../../data/egggroup.js';
 import gendercode from '../../data/gendercode.js';
@@ -39,7 +39,7 @@ Page({
     item.showid = item.id.replace(/\D/, '');
     item.ctype = [];
     item.abilityList = [];
-    item.carea = [];
+    // item.carea = [];
     item.ceggGroup = [];
     item.cevolutions = [];
     if (!item.generation) {
@@ -50,9 +50,9 @@ Page({
       item.ctype.push(type.getCname(item.type[i]));
     }
     // 地区
-    for (let i = 0, l = item.area.length; i < l; i++) {
-      item.carea.push(area.getCname(item.area[i]));
-    }
+    // for (let i = 0, l = item.area.length; i < l; i++) {
+    //   item.carea.push(area.getCname(item.area[i]));
+    // }
     // 蛋组
     for (let i = 0, l = item.eggGroup.length; i < l; i++) {
       item.ceggGroup.push(egggroup.getCname(item.eggGroup[i]));

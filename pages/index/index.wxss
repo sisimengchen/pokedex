@@ -1,7 +1,9 @@
 /**index.wxss**/
+
 page {
   background-color: #fff;
 }
+
 .container {
   display: block;
   background-color: #fff;
@@ -71,18 +73,30 @@ page {
 .spriteList {
   position: relative;
 }
+
 .stand {
-  height: 96rpx;
-}
-.sprite {
-  display: block;
-  margin: 0 32rpx;
   height: 88rpx;
-  line-height: 88rpx;
+}
+
+.sprite {
+  position: relative;
+  display: block;
+  padding: 0 32rpx;
+  height: 96rpx;
+  line-height: 96rpx;
   font-size: 32rpx;
   color: #353535;
-  border-bottom: 1rpx solid #e5e5e5;
   box-sizing: border-box;
+}
+
+.sprite::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 1rpx;
+  left: 132rpx;
+  right: 32rpx;
+  border-bottom: 1rpx solid #e5e5e5;
 }
 
 .sprite .name {

@@ -18,6 +18,7 @@
     "pages/info/about/index",
     "pages/info/feedback/index",
     "pages/info/typerestrain/index",
+    "pages/info/ability/index",
     "pages/calendar/index/index",
     "pages/calendar/introduce/index"
   ],
@@ -48,9 +49,9 @@
       },
       {
         "pagePath": "pages/info/index/index",
-        "text": "信息",
-        "iconPath": "/img/icon_tabbar_info_normal.png",
-        "selectedIconPath": "/img/icon_tabbar_info_selected.png"
+        "text": "工具",
+        "iconPath": "/img/icon_tabbar_tools_normal.png",
+        "selectedIconPath": "/img/icon_tabbar_tools_selected.png"
       },
       {
         "pagePath": "pages/calendar/index/index",
@@ -62,5 +63,6 @@
   },
   "navigateToMiniProgramAppIdList": [
     "wx4f3c74df9e59d919"
-  ]
+  ],
+  "sitemapLocation": "sitemap.json"
 }

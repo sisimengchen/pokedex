@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <form class="top" bindreset="clearSearch">
+    <view class="searchctn">
+      <image src="/img/icon_search.png"></image>
+      <input class="search" placeholder-style="color: #b2b2b2;" type="text" placeholder="请输入特性名" confirm-type="search" bindinput="onInput" focus/>
+    </view>
+  </form>
+  <view wx:if="abilityList" class="spriteList">
+    <view class="stand"></view>
+    <view wx:for="{{abilityList}}" class="sprite" wx:for-item="ability" wx:key="unique" data-id="{{ability.id}}" bindtap="tapAbility">
+      <text class="name">{{ability.cname}}</text>
+    </view>
+  </view>
+</view>

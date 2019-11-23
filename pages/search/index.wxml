@@ -9,7 +9,7 @@
       <button bindtap="back">取消</button>
     </view> 
   </form>
-  <scroll-view scroll-y="true" scroll-top="0" bindscroll="onScroll" wx:if="spriteList" class="spriteList">
+  <view wx:if="spriteList" class="spriteList">
     <view class="stand"></view>
     <view wx:for="{{spriteList}}" class="sprite" wx:for-item="sprite" wx:key="unique" data-id="{{sprite.id}}" data-index="{{sprite.index}}" bindtap="tapSprite">
       <image class="m-avatar" src="/img/sprites/{{sprite.id}}.png"></image>
@@ -18,5 +18,5 @@
         <text class="m-type {{type}}" wx:for="{{sprite.type}}" wx:key="unique" wx:for-item="type" wx:for-index="index">{{sprite.ctype[index]}}</text>
       </view>
     </view>
-  </scroll-view>
+  </view>
 </view>

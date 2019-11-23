@@ -20,11 +20,18 @@
   </view>
 
   <view class="infolist">
+    <view wx:for="{{infoList2}}" wx:for-item="info" wx:key="unique" class="m-info" data-link="{{info.link}}" bindtap="goto">
+      <text>{{info.title}}</text>
+      <text wx:if="{{info.tag}}" class="tag">{{info.tag}}</text>
+      <view class="m-chevron">
+        <image class="chevron" src="/img/chevron.png"></image>
+      </view>
+    </view>
     <view class="m-info" data-link="{{info.link}}" bindtap="goto">
       <text>宝可梦倒序排列</text>
       <text class="tag">NEW</text>
       <view class="m-switch">
-      <switch color="#dc4343" checked="{{GLOBAL_SPRITE_REVERSE}}" bindchange="switchChange" />
+        <switch color="#dc4343" checked="{{GLOBAL_SPRITE_REVERSE}}" bindchange="switchChange" />
       </view>
     </view>
   </view>

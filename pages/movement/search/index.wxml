@@ -9,7 +9,7 @@
       <button bindtap="back">取消</button>
     </view>
   </form>
-  <scroll-view scroll-y="true" scroll-top="0" bindscroll="onScroll" wx:if="moveList" class="spriteList">
+  <view wx:if="moveList" class="spriteList">
     <view class="stand"></view>
     <view wx:for="{{moveList}}" class="sprite" wx:for-item="move" wx:key="unique" data-id="{{move.id}}" data-index="{{move.index}}" bindtap="tapSprite">
       <text class="name">{{move.cname}}</text>
@@ -21,5 +21,5 @@
       </view>
       <text class="power">{{move.power}}</text>
     </view>
-  </scroll-view>
+  </view>
 </view>

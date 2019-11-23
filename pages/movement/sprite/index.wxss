@@ -4,10 +4,6 @@
   margin-top: 100rpx;
 }
 
-.m-tabs .m-tab {
-  margin: 0 20rpx;
-}
-
 .m-contents .m-content .item {
   /* display: flex; */
   margin: 0 30rpx;

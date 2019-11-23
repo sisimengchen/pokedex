@@ -5,56 +5,41 @@ Page({
   data: {
     moveList: [],
   },
-  onLoad: function (options) {
-    this.isLoading = true;
+  onLoad: function(options) {
     wx.showLoading({
       mask: true,
       title: '数据加载中'
     });
     this.filterList = app.globalObject.moveList;
   },
-  onReady: function () {
+  onReady: function() {
     wx.hideLoading();
-    this.isLoading = false;
-    this.windowHeight = wx.getSystemInfoSync().windowHeight;
-    this.scrollList = [];
   },
-  onScroll: function (e) {
-  },
-  tapSprite: function (event) {
-    var index = event.currentTarget.dataset.index + '';
-    index = '';
+  tapSprite: function(event) {
     var id = event.currentTarget.dataset.id;
-    if (index) {
-      wx.navigateTo({
-        url: '/pages/movement/detail/index?index=' + index
-      });
-    } else if (id) {
-      wx.navigateTo({
-        url: '/pages/movement/detail/index?id=' + id
-      });
-    }
+    id && wx.navigateTo({
+      url: '/pages/movement/detail/index?id=' + id
+    });
   },
-  tapFilter: function (event) {
+  tapFilter: function(event) {
     wx.navigateTo({
       url: '/pages/movement/filter/index?isFilter=' + this.data.isFilter + '&filter=' + this.data.filter
     });
   },
-  toabout: function () {
+  toabout: function() {
     wx.navigateTo({
       url: '/pages/about/index'
     });
   },
-  back:function() {
-    wx.navigateBack({ 
-    });
+  back: function() {
+    wx.navigateBack({});
   },
-  clearSearch: function () {
+  clearSearch: function() {
     this.setData({
       moveList: this.filterList
     });
   },
-  onInput: function (event) {
+  onInput: function(event) {
     var vaule = event.detail.value.replace(/\s/ig, '');
     if (this.searchStr == vaule) {
       return vaule;
@@ -62,9 +47,9 @@ Page({
     if (/^\d+$/.test(vaule) && !/^\d{3}$/.test(vaule)) {
       return vaule;
     }
+    console.log(vaule)
     if (vaule) {
       var moveList = this.search('cname', vaule);
-      console.log(vaule, moveList);
       this.setData({
         moveList: moveList
       });
@@ -76,7 +61,7 @@ Page({
     return this.searchStr = vaule;
   },
   // 多属性查询精灵
-  search: function (key, queryString) {
+  search: function(key, queryString) {
     var results = [];
     var keys = key.split(',');
     for (var i = 0, size = this.filterList.length; i < size; i++) {

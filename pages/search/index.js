@@ -6,7 +6,6 @@ Page({
     spriteList: [],
   },
   onLoad: function (options) {
-    this.isLoading = true;
     wx.showLoading({
       mask: true,
       title: '数据加载中'
@@ -15,25 +14,12 @@ Page({
   },
   onReady: function () {
     wx.hideLoading();
-    this.isLoading = false;
-    this.windowHeight = wx.getSystemInfoSync().windowHeight;
-    this.scrollList = [];
-  },
-  onScroll: function (e) {
   },
   tapSprite: function (event) {
-    var index = event.currentTarget.dataset.index + '';
-    index = '';
     var id = event.currentTarget.dataset.id;
-    if (index) {
-      wx.navigateTo({
-        url: '/pages/sprite/index?index=' + index
-      });
-    } else if (id) {
-      wx.navigateTo({
-        url: '/pages/sprite/index?id=' + id
-      });
-    }
+    id && wx.navigateTo({
+      url: '/pages/sprite/index?id=' + id
+    });
   },
   tapFilter: function (event) {
     wx.navigateTo({
