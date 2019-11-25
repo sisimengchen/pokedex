@@ -1,5 +1,4 @@
 //index.js
-let interstitialAd = null
 Page({
   data: {
     updateList: [{
@@ -117,20 +116,6 @@ Page({
     }
     ]
   },
-  onLoad: function () {
-    if (wx.createInterstitialAd) {
-      interstitialAd = wx.createInterstitialAd({
-        adUnitId: 'adunit-b35d91cb29a860c3'
-      })
-      interstitialAd.onLoad(() => { })
-      interstitialAd.onError((err) => { })
-      interstitialAd.onClose(() => { })
-      if (interstitialAd) {
-        interstitialAd.show().catch((err) => {
-          console.error(err)
-        })
-      }
-    }
-  },
+  onLoad: function () { },
   onShareAppMessage: function (e) { }
 })
