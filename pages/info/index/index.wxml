@@ -27,17 +27,22 @@
         <image class="chevron" src="/img/chevron.png"></image>
       </view>
     </view>
-    <view class="m-info" data-link="{{info.link}}" bindtap="goto">
+    <view class="m-info">
       <text>宝可梦倒序排列</text>
-      <text class="tag">NEW</text>
       <view class="m-switch">
-        <switch color="#dc4343" checked="{{GLOBAL_SPRITE_REVERSE}}" bindchange="switchChange" />
+        <switch color="#dc4343" checked="{{GLOBAL_SPRITE_REVERSE}}" bindchange="switchChange" data-name="排序" data-id="GLOBAL_SPRITE_REVERSE"/>
+      </view>
+    </view>
+    <view class="m-info">
+      <text>只看伽勒尔地区宝可梦</text>
+      <view class="m-switch">
+        <switch color="#dc4343" checked="{{GLOBAL_SPRITE_GALAR}}" bindchange="switchChange" data-name="只看伽勒尔地区" data-id="GLOBAL_SPRITE_GALAR"/>
       </view>
     </view>
   </view>
 
   <view class="infolist">
-    <view wx:for="{{miniProgramList}}" wx:for-item="miniProgram" wx:key="unique" class="m-info" wx:for-index="index" data-appid="{{miniProgram.appid}}" bindtap="gotoMiniProgram">
+    <view wx:for="{{miniProgramList}}" wx:for-item="miniProgram" wx:key="unique" class="m-info" wx:for-index="index" data-appid="{{miniProgram.appid}}" data-path="{{miniProgram.path}}" bindtap="gotoMiniProgram">
       <text>{{miniProgram.title}}</text>
       <text wx:if="{{miniProgram.tag}}" class="tag">{{miniProgram.tag}}</text>
       <view class="m-chevron">

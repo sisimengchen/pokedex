@@ -11,6 +11,7 @@ Page({
    */
   data: {
     GLOBAL_SPRITE_REVERSE: read('GLOBAL_SPRITE_REVERSE') ? true : false,
+    GLOBAL_SPRITE_GALAR: read('GLOBAL_SPRITE_GALAR') ? true : false,
     navList: [{
         title: '性格修正表',
         link: 'character'
@@ -37,6 +38,7 @@ Page({
     miniProgramList: [{
       title: '一个没有感情的杀手',
       appid: 'wx4f3c74df9e59d919',
+      path: 'index.html?wxgamecid=CCBgAAoXkpQY9RNKbeAY7O',
       tag: '手慢不要点'
     }]
   },
@@ -44,7 +46,8 @@ Page({
   onLoad: function(options) {
     this.setData({
       adList: adList,
-      GLOBAL_SPRITE_REVERSE: read('GLOBAL_SPRITE_REVERSE') ? true : false
+      GLOBAL_SPRITE_REVERSE: read('GLOBAL_SPRITE_REVERSE') ? true : false,
+      GLOBAL_SPRITE_GALAR: read('GLOBAL_SPRITE_GALAR') ? true : false
     });
   },
   goto: function(event) {
@@ -57,19 +60,31 @@ Page({
   },
   gotoMiniProgram: function(event) {
     var appid = event.currentTarget.dataset.appid;
-    wx.navigateToMiniProgram({
+    var path = event.currentTarget.dataset.path;
+    const data = {
       appId: appid
-    })
+    }
+    if (path) {
+      data.path = path
+    }
+    wx.navigateToMiniProgram(data)
   },
   switchChange: function(e) {
+    const id = e.target.dataset.id;
+    if (!id) return
     const value = e.detail.value;
-    this.setData({
-      GLOBAL_SPRITE_REVERSE: value
-    })
-    app.globalObject.reverseSprite(value)
+    const data = {}
+    data[id + ''] = value
+    this.setData(data)
+    if (id == 'GLOBAL_SPRITE_REVERSE') {
+      app.globalObject.reverseSprite(value)
+    } else if (id == 'GLOBAL_SPRITE_GALAR') {
+      app.globalObject.limitSprite(value)
+    }
+    const name = e.target.dataset.name;
     wx.showModal({
       title: '提示',
-      content: '切换排序功能会在下次小程序启动生效',
+      content: `切换${name}功能会在下次小程序启动生效`,
       confirmText: '立即重启',
       cancelText: '我知道了',
       success: (res) => {

@@ -1,14 +1,14 @@
 //app.js
 import globalObject from './data/globalobject.js';
 let interstitialAd = null;
-const cards = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const cards = [0, 1]
 App({
   onLaunch: function () {
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    if (wx.createInterstitialAd && this.shuffle(cards)[0] == 0) {
+    if (wx.createInterstitialAd && this.shuffle(cards)[0] == 1) {
       interstitialAd = wx.createInterstitialAd({
         adUnitId: 'adunit-b35d91cb29a860c3'
       })

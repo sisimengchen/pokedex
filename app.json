@@ -19,8 +19,7 @@
     "pages/info/feedback/index",
     "pages/info/typerestrain/index",
     "pages/info/ability/index",
-    "pages/calendar/index/index",
-    "pages/calendar/introduce/index"
+    "pages/calendar/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

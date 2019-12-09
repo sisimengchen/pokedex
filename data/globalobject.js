@@ -1,12 +1,33 @@
-import spriteList from './pokemons/pokemons.js';
-import moveList from './moves/moves.js';
-import { save, read, remove } from '../utils/localStorage.js'
+import spriteList from "./pokemons/pokemons.js";
+import moveList from "./moves/moves.js";
+import galaridList from "./galaridList.js";
+import { save, read, remove } from "../utils/localStorage.js";
+
+const spriteMap = {};
+spriteList.forEach(sprite => {
+  spriteMap[sprite.id + ""] = sprite;
+});
+const galarSpriteList = galaridList.map(id => {
+  return spriteMap[id + ""];
+});
+
+let initedSpriteList = [];
+
+if (read("GLOBAL_SPRITE_GALAR")) {
+  initedSpriteList = galarSpriteList;
+} else {
+  initedSpriteList = spriteList;
+}
+
+if (read("GLOBAL_SPRITE_REVERSE")) {
+  initedSpriteList = initedSpriteList.reverse();
+}
 
 var globalObject = {
   // 精灵列表
-  spriteList: read('GLOBAL_SPRITE_REVERSE') ? spriteList.reverse() : spriteList,
+  spriteList: initedSpriteList,
   // id查询精灵
-  getItemById: function (id) {
+  getItemById: function(id) {
     for (var i = 0, size = this.spriteList.length; i < size; i++) {
       var item = this.spriteList[i];
       if (id == item.id) {
@@ -14,22 +35,37 @@ var globalObject = {
       }
     }
   },
-  isReversed: read('GLOBAL_SPRITE_REVERSE') ? true : false,
-  reverseSprite: function (value) {
+  isReversed: read("GLOBAL_SPRITE_REVERSE") ? true : false,
+  reverseSprite: function(value) {
     if (this.isReversed == !!value) {
-      return
+      return;
     } else {
       this.isReversed = !!value;
       if (this.isReversed) {
-        save('GLOBAL_SPRITE_REVERSE', 1)
+        save("GLOBAL_SPRITE_REVERSE", 1);
       } else {
-        remove('GLOBAL_SPRITE_REVERSE')
+        remove("GLOBAL_SPRITE_REVERSE");
       }
-      this.spriteList = this.spriteList.reverse()
+      this.spriteList = this.spriteList.reverse();
+    }
+  },
+  limited: read("GLOBAL_SPRITE_GALAR") ? true : false,
+  limitSprite: function(value) {
+    if (this.limited == !!value) {
+      return;
+    } else {
+      this.limited = !!value;
+      if (this.limited) {
+        save("GLOBAL_SPRITE_GALAR", 1);
+        this.spriteList = galarSpriteList;
+      } else {
+        remove("GLOBAL_SPRITE_GALAR");
+        this.spriteList = spriteList;
+      }
     }
   },
   // id获取世代
-  getGgenerationById: function (id) {
+  getGgenerationById: function(id) {
     id = parseInt(id, 10);
     if (id < 152) {
       return 1;
@@ -55,19 +91,23 @@ var globalObject = {
     return 8;
   },
   // 通过精灵特征查询精灵列表
-  getItemsByAbility: function (ability) {
+  getItemsByAbility: function(ability) {
     if (!ability) return null;
     var results = [];
     for (var i = 0, size = this.spriteList.length; i < size; i++) {
       var item = this.spriteList[i];
-      if (item.ability && item.ability.length && item.ability.indexOf(ability) >= 0) {
+      if (
+        item.ability &&
+        item.ability.length &&
+        item.ability.indexOf(ability) >= 0
+      ) {
         results.push(item);
       }
     }
     return results;
   },
   // 获取精灵的进化信息
-  getEvolutions: function (sprite) {
+  getEvolutions: function(sprite) {
     var evolutions = sprite.evolutions,
       step1 = evolutions[0],
       step2 = evolutions[1],
@@ -77,13 +117,13 @@ var globalObject = {
       step3List = [];
     if (step3) {
       for (var i = 0; i <= 7; i++) {
-        var idkey = 'id' + (i ? i : '');
+        var idkey = "id" + (i ? i : "");
         var idvalue = step3[idkey];
-        var levelkey = 'level' + (i ? i : '');
-        var stonekey = 'stone' + (i ? i : '');
-        var happinesskey = 'happiness' + (i ? i : '');
-        var exchangekey = 'exchange' + (i ? i : '');
-        var otherkey = 'other' + (i ? i : '');
+        var levelkey = "level" + (i ? i : "");
+        var stonekey = "stone" + (i ? i : "");
+        var happinesskey = "happiness" + (i ? i : "");
+        var exchangekey = "exchange" + (i ? i : "");
+        var otherkey = "other" + (i ? i : "");
         var sprite = idvalue ? this.getItemById(idvalue) : {};
         var e = {
           id: step3[idkey],
@@ -94,21 +134,25 @@ var globalObject = {
           other: step3[otherkey],
           name: sprite.name,
           cname: sprite.cname,
-          className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty',
-          stand: idvalue ? '' : 'stand'
-        }
+          className: idvalue
+            ? idvalue == sprite.id
+              ? "current"
+              : ""
+            : "empty",
+          stand: idvalue ? "" : "stand"
+        };
         step3List.push(e);
       }
     }
     if (step2) {
       for (var i = 0; i <= 7; i++) {
-        var idkey = 'id' + (i ? i : '');
-        var idvalue = step2[idkey]
-        var levelkey = 'level' + (i ? i : '');
-        var stonekey = 'stone' + (i ? i : '');
-        var happinesskey = 'happiness' + (i ? i : '');
-        var exchangekey = 'exchange' + (i ? i : '');
-        var otherkey = 'other' + (i ? i : '');
+        var idkey = "id" + (i ? i : "");
+        var idvalue = step2[idkey];
+        var levelkey = "level" + (i ? i : "");
+        var stonekey = "stone" + (i ? i : "");
+        var happinesskey = "happiness" + (i ? i : "");
+        var exchangekey = "exchange" + (i ? i : "");
+        var otherkey = "other" + (i ? i : "");
         var sprite = idvalue ? this.getItemById(idvalue) : {};
         var e = {
           id: step2[idkey],
@@ -119,21 +163,25 @@ var globalObject = {
           other: step2[otherkey],
           name: sprite.name,
           cname: sprite.cname,
-          className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty',
-          stand: idvalue ? '' : 'stand'
-        }
+          className: idvalue
+            ? idvalue == sprite.id
+              ? "current"
+              : ""
+            : "empty",
+          stand: idvalue ? "" : "stand"
+        };
         step2List.push(e);
       }
     }
     if (step1) {
       for (var i = 0; i <= 7; i++) {
-        var idkey = 'id' + (i ? i : '');
-        var idvalue = step1[idkey]
-        var levelkey = 'level' + (i ? i : '');
-        var stonekey = 'stone' + (i ? i : '');
-        var happinesskey = 'happiness' + (i ? i : '');
-        var exchangekey = 'exchange' + (i ? i : '');
-        var otherkey = 'other' + (i ? i : '');
+        var idkey = "id" + (i ? i : "");
+        var idvalue = step1[idkey];
+        var levelkey = "level" + (i ? i : "");
+        var stonekey = "stone" + (i ? i : "");
+        var happinesskey = "happiness" + (i ? i : "");
+        var exchangekey = "exchange" + (i ? i : "");
+        var otherkey = "other" + (i ? i : "");
         var sprite = idvalue ? this.getItemById(idvalue) : {};
         var e = {
           id: step1[idkey],
@@ -144,16 +192,24 @@ var globalObject = {
           other: step1[otherkey],
           name: sprite.name,
           cname: sprite.cname,
-          className: idvalue ? (idvalue == sprite.id ? 'current' : '') : 'empty'
-        }
+          className: idvalue ? (idvalue == sprite.id ? "current" : "") : "empty"
+        };
         step1List.push(e);
       }
     }
     item.evolutmax = [];
     for (var i = 0; i <= 7; i++) {
-      var s1 = step1List[i] || { id: undefined, className: 'empty' };
-      var s2 = step2List[i] || { id: undefined, className: 'empty', stand: 'stand' };
-      var s3 = step3List[i] || { id: undefined, className: 'empty', stand: 'stand' };
+      var s1 = step1List[i] || { id: undefined, className: "empty" };
+      var s2 = step2List[i] || {
+        id: undefined,
+        className: "empty",
+        stand: "stand"
+      };
+      var s3 = step3List[i] || {
+        id: undefined,
+        className: "empty",
+        stand: "stand"
+      };
       if (s1.id || s2.id || s3.id) {
         var list = [];
         list.push(s1);
@@ -165,13 +221,15 @@ var globalObject = {
     return sprite;
   },
   // 多属性查询精灵
-  search: function (key, queryString) {
+  search: function(key, queryString) {
     var results = [];
-    var keys = key.split(',');
+    var keys = key.split(",");
     for (var i = 0, size = this.spriteList.length; i < size; i++) {
       var item = this.spriteList[i];
       for (var j = 0, jsize = keys.length; j < jsize; j++) {
-        if (item[keys[j]].toLowerCase().indexOf(queryString.toLowerCase()) >= 0) {
+        if (
+          item[keys[j]].toLowerCase().indexOf(queryString.toLowerCase()) >= 0
+        ) {
           results.push(item);
           break;
         }
@@ -180,7 +238,7 @@ var globalObject = {
     return results;
   },
   // 筛选
-  filter: function (queryObject) {
+  filter: function(queryObject) {
     if (!queryObject) {
       return this.spriteList;
     }
@@ -249,7 +307,7 @@ var globalObject = {
   // 招式列表
   moveList: moveList,
   // id查询招式
-  getMoveById: function (id) {
+  getMoveById: function(id) {
     for (var i = 0, size = this.moveList.length; i < size; i++) {
       var item = this.moveList[i];
       if (id == item.id) {
@@ -258,13 +316,15 @@ var globalObject = {
     }
   },
   // 多属性查询招式
-  searchMove: function (key, queryString) {
+  searchMove: function(key, queryString) {
     var results = [];
-    var keys = key.split(',');
+    var keys = key.split(",");
     for (var i = 0, size = this.moveList.length; i < size; i++) {
       var item = this.moveList[i];
       for (var j = 0, jsize = keys.length; j < jsize; j++) {
-        if (item[keys[j]].toLowerCase().indexOf(queryString.toLowerCase()) >= 0) {
+        if (
+          item[keys[j]].toLowerCase().indexOf(queryString.toLowerCase()) >= 0
+        ) {
           results.push(item);
           break;
         }
@@ -273,7 +333,7 @@ var globalObject = {
     return results;
   },
   // 筛选招式
-  filterMove: function (queryObject) {
+  filterMove: function(queryObject) {
     if (!queryObject) {
       return this.moveList;
     }

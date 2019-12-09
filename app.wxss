@@ -146,8 +146,8 @@ page {
 .m-avatar {
   display: inline-block;
   vertical-align: middle;
-  height: 40px;
-  width: 40px;
+  width: 80rpx;
+  height: 80rpx;
 }
 
 /* 精灵类型标签 */
