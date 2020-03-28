@@ -36,10 +36,10 @@ Page({
       link: 'ability'
     }],
     miniProgramList: [{
-      title: '一个没有感情的杀手',
-      appid: 'wx4f3c74df9e59d919',
-      path: 'index.html?wxgamecid=CCBgAAoXkpQY9RNKbeAY7O',
-      tag: '手慢不要点'
+      title: 'Latte动森图鉴',
+      appid: 'wxbae57ea6496c7e66',
+      // path: 'index.html?wxgamecid=CCBgAAoXkpQY9RNKbeAY7O',
+      tag: '居家旅行、钓鱼捉虫、必备良药'
     }]
   },
   onShareAppMessage: function(e) {},
